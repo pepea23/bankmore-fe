@@ -10,5 +10,3 @@ npm-debug.log
 # Nuxt generate
 dist
 
-#editor setting
-.vscode
