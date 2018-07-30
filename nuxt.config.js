@@ -42,7 +42,7 @@ module.exports = {
   /*
   ** Plugin
   */
-  plugins: ['~plugins/bootstrap.js'],
+  plugins: ['~plugins/bootstrap', { src: '~plugins/vue-sticky', ssr: false }],
   /*
   ** Customize the progress bar color
   */
@@ -51,6 +51,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['vue-sticky'],
     plugins: [
       new webpack.ProvidePlugin({
         $: 'jquery',
