@@ -14,6 +14,14 @@ module.exports = {
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      { src: '@/assets/js/bootstrap.min.js' },
+      { src: '@/assets/js/menumaker.min.js' },
+      { src: '@/assets/js/sticky-header.js' },
+      { src: '@/assets/js/owl.carousel.min.js' },
+      { src: '@/assets/js/slider-carousel.js' },
+      { src: '@/assets/js/back-to-top.js' },
+    ],
   },
   /*
   ** Style
