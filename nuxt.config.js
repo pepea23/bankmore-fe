@@ -1,3 +1,5 @@
+const webpack = require('webpack')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -15,23 +17,32 @@ module.exports = {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
-      { src: '@/assets/js/bootstrap.min.js' },
-      { src: '@/assets/js/menumaker.min.js' },
-      { src: '@/assets/js/sticky-header.js' },
-      { src: '@/assets/js/owl.carousel.min.js' },
-      { src: '@/assets/js/slider-carousel.js' },
-      { src: '@/assets/js/back-to-top.js' },
+      { src: 'js/jquery.min.js', body: true, ssr: false },
+      { src: 'js/menumaker.min.js', body: true, ssr: false },
+      { src: 'js/jquery.sticky.js', body: true, ssr: false },
+      { src: 'js/sticky-header.js', body: true, ssr: false },
+      { src: 'js/owl.carousel.min.js', body: true, ssr: false },
+      { src: 'js/slider-carousel.js', body: true, ssr: false },
+      { src: 'js/service-carousel.js', body: true, ssr: false },
+      { src: 'js/back-to-top.js', body: true, ssr: false },
     ],
   },
   /*
   ** Style
   */
   css: [
-    '@/assets/css/bootstrap.min.css',
-    '@/assets/css/style.css',
-    '@/assets/css/font-awesome.min.css',
-    '@/assets/css/fontello.css',
+    'bootstrap/dist/css/bootstrap.css',
+    '@/static/css/style.css',
+    '@/static/css/font-awesome.min.css',
+    '@/static/css/fontello.css',
+    '@/static/css/font-awesome.min.css',
+    '@/static/css/owl.carousel.css',
+    '@/static/css/owl.theme.css',
   ],
+  /*
+  ** Plugin
+  */
+  plugins: ['~plugins/bootstrap.js'],
   /*
   ** Customize the progress bar color
   */
@@ -40,7 +51,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['jquery'],
     plugins: [
       new webpack.ProvidePlugin({
         $: 'jquery',
