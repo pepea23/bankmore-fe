@@ -23,9 +23,6 @@ module.exports = {
     '@/assets/css/style.css',
     '@/assets/css/font-awesome.min.css',
     '@/assets/css/fontello.css',
-    '@/assets/css/style.css',
-    '@/assets/css/owl.carousel.css',
-    '@/assets/css/owl.theme.css',
   ],
   /*
   ** Customize the progress bar color
@@ -35,9 +32,14 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    /*
-    ** Run ESLint on save
-    */
+    vendor: ['jquery'],
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery',
+      }),
+    ],
     extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
