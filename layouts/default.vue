@@ -1,16 +1,17 @@
 <template>
   <div>
-    <menu-header></menu-header>
+    <main-header></main-header>
     <nuxt/>
   </div>
 </template>
 
 <script>
-import MenuHeader from '@/components/MenuHeader'
+const MainHeader = () =>
+  import(/* webpackChunkName:'main-header-components' */ '@/components/MainHeader')
 
 export default {
   components: {
-    MenuHeader,
+    MainHeader,
   },
 }
 </script>
