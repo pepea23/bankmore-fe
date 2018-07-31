@@ -19,12 +19,6 @@ module.exports = {
     script: [
       { src: 'js/jquery.min.js', body: true, ssr: false },
       { src: 'js/menumaker.min.js', body: true, ssr: false },
-      { src: 'js/jquery.sticky.js', body: true, ssr: false },
-      { src: 'js/sticky-header.js', body: true, ssr: false },
-      { src: 'js/owl.carousel.min.js', body: true, ssr: false },
-      { src: 'js/slider-carousel.js', body: true, ssr: false },
-      { src: 'js/service-carousel.js', body: true, ssr: false },
-      { src: 'js/back-to-top.js', body: true, ssr: false },
     ],
   },
   /*
@@ -35,14 +29,14 @@ module.exports = {
     '@/static/css/style.css',
     '@/static/css/font-awesome.min.css',
     '@/static/css/fontello.css',
-    '@/static/css/font-awesome.min.css',
-    '@/static/css/owl.carousel.css',
-    '@/static/css/owl.theme.css',
   ],
   /*
   ** Import Plugin
   */
-  plugins: ['~plugins/bootstrap', { src: '~plugins/vue-sticky', ssr: false }],
+  plugins: [
+    { src: '~plugins/bootstrap', ssr: false },
+    { src: '~plugins/vue-sticky', ssr: false },
+  ],
   /*
   ** Customize the progress bar color
   */
@@ -52,6 +46,7 @@ module.exports = {
   */
   build: {
     vendor: ['vue-sticky'],
+    analyze: process.env.ANALYZE,
     plugins: [
       new webpack.ProvidePlugin({
         $: 'jquery',
