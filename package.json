@@ -5,16 +5,17 @@
   "author": "Ultronix <ultronix.co>",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "node server.js",
     "build": "nuxt build",
     "analyze": "nuxt build --analyze",
-    "start": "nuxt start",
+    "start": "NODE_ENV=production node server.js",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
     "bootstrap": "^4.1.3",
+    "express": "^4.16.3",
     "nuxt": "^1.0.0",
     "popper.js": "^1.14.3",
     "vue-sticky": "^3.3.4"
