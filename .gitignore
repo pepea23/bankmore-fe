@@ -73,4 +73,5 @@ typings/
 # Serverless directories
 .serverless
 
-
+# For formatting vue template
+format.html
