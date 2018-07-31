@@ -2,6 +2,7 @@
   <div class="row">
     <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6 col-6">
       <div class="logo">
+        IN: {{$mq}}
         <nuxt-link to="/" exact><img src="images/logo.png" alt="Bankmore+" id="logo-bankmore"><b>Bankmore+</b></nuxt-link>
       </div>
     </div>
@@ -46,10 +47,10 @@ export default {
   },
   computed: {
     activeSmallScreen() {
-      return { 'small-screen': this.isMobile ? true : false }
+      return { 'small-screen': this.isMobile }
     },
     mobileMenuButton() {
-      return { 'menu-opened': this.isMobileMenuToggle ? true : false }
+      return { 'menu-opened': this.isMobileMenuToggle }
     },
     showMobileMenu() {
       return {
@@ -57,10 +58,10 @@ export default {
       }
     },
     statusMobileMenu() {
-      return { open: this.isMobileMenuToggle ? true : false }
+      return { open: this.isMobileMenuToggle }
     },
     isMobile() {
-      return this.$mq === 'xs' || this.$mq === 'sm' ? true : false
+      return this.$mq === 'xs' || this.$mq === 'sm'
     },
   },
   methods: {
