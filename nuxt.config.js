@@ -63,7 +63,10 @@ module.exports = {
   /*
   ** Import Plugin
   */
-  plugins: [{ src: '~plugins/vue-sticky', ssr: false }],
+  plugins: [
+    { src: '~plugins/vue-sticky', ssr: false },
+    { src: '~plugins/vue-mq', ssr: false },
+  ],
   /*
   ** Customize the progress bar color
   */
@@ -73,7 +76,7 @@ module.exports = {
   */
   build: {
     extractCSS: true,
-    vendor: ['vue-sticky'],
+    vendor: ['vue-sticky', 'vue-mq'],
     plugins: [
       new webpack.ProvidePlugin({
         $: 'jquery',
