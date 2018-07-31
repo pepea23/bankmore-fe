@@ -93,6 +93,10 @@ module.exports = {
     },
   },
   /*
+  ** Router
+  */
+  router: {},
+  /*
   ** Module
   */
   modules: ['@nuxtjs/axios'],
