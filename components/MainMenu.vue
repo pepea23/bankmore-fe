@@ -6,8 +6,9 @@
       </div>
     </div>
     <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
-      <div id="navigation">
-        <ul>
+      <div id="navigation" :class="activeSmallScreen">
+        <div v-if="isMobile" id="menu-button" :class="mobileMenuButton" @click="toggleMobileMenu()">Menu</div>
+        <ul :style="showMobileMenu" :class="statusMobileMenu">
           <nuxt-link tag="li" to="/" exact>
             <a class="animsition-link">Home</a>
           </nuxt-link>
@@ -38,6 +39,35 @@
 <script>
 export default {
   name: 'Menu-Header',
+  data() {
+    return {
+      isMobileMenuToggle: false,
+    }
+  },
+  computed: {
+    activeSmallScreen() {
+      return { 'small-screen': this.isMobile ? true : false }
+    },
+    mobileMenuButton() {
+      return { 'menu-opened': this.isMobileMenuToggle ? true : false }
+    },
+    showMobileMenu() {
+      return {
+        display: this.isMobile && !this.isMobileMenuToggle ? 'none' : 'block',
+      }
+    },
+    statusMobileMenu() {
+      return { open: this.isMobileMenuToggle ? true : false }
+    },
+    isMobile() {
+      return this.$mq === 'sm' ? true : false
+    },
+  },
+  methods: {
+    toggleMobileMenu() {
+      this.isMobileMenuToggle = !this.isMobileMenuToggle
+    },
+  },
 }
 </script>
 
