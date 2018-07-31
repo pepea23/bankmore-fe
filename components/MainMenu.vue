@@ -40,3 +40,10 @@ export default {
   name: 'Menu-Header',
 }
 </script>
+
+<style scoped>
+.nuxt-link-exact-active > a,
+.next-link-active > a {
+  color: #f51f8a !important;
+}
+</style>
