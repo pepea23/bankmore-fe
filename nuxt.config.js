@@ -46,7 +46,6 @@ module.exports = {
   */
   build: {
     vendor: ['vue-sticky'],
-    analyze: process.env.ANALYZE,
     plugins: [
       new webpack.ProvidePlugin({
         $: 'jquery',
