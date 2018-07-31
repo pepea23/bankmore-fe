@@ -5,7 +5,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'bankmore-fe',
+    title: 'Bankmore+',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -28,7 +28,7 @@ module.exports = {
     ],
   },
   /*
-  ** Style
+  ** Import Style
   */
   css: [
     'bootstrap/dist/css/bootstrap.css',
@@ -40,7 +40,7 @@ module.exports = {
     '@/static/css/owl.theme.css',
   ],
   /*
-  ** Plugin
+  ** Import Plugin
   */
   plugins: ['~plugins/bootstrap', { src: '~plugins/vue-sticky', ssr: false }],
   /*
@@ -70,4 +70,9 @@ module.exports = {
       }
     },
   },
+  /*
+  ** Module
+  */
+  modules: ['@nuxtjs/axios'],
+  axios: {},
 }
