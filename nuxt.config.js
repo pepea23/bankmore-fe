@@ -17,15 +17,37 @@ module.exports = {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
-      { src: 'js/jquery.min.js', body: true, ssr: false },
+      {
+        src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js',
+        body: true,
+        ssr: false,
+      },
+      {
+        src:
+          'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
+        body: true,
+        ssr: false,
+      },
+      {
+        src:
+          'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
+        body: true,
+        ssr: false,
+      },
       { src: 'js/menumaker.min.js', body: true, ssr: false },
+      {
+        src:
+          'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js',
+        body: true,
+        ssr: false,
+      },
     ],
   },
   /*
   ** Import Style
   */
   css: [
-    'bootstrap/dist/css/bootstrap.css',
+    '@/static/css/bootstrap.min.css',
     '@/static/css/style.css',
     '@/static/css/font-awesome.min.css',
     '@/static/css/fontello.css',
@@ -33,10 +55,7 @@ module.exports = {
   /*
   ** Import Plugin
   */
-  plugins: [
-    { src: '~plugins/bootstrap', ssr: false },
-    { src: '~plugins/vue-sticky', ssr: false },
-  ],
+  plugins: [{ src: '~plugins/vue-sticky', ssr: false }],
   /*
   ** Customize the progress bar color
   */
@@ -45,6 +64,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    extractCSS: true,
     vendor: ['vue-sticky'],
     plugins: [
       new webpack.ProvidePlugin({
