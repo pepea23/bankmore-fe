@@ -10,9 +10,7 @@
     "analyze": "nuxt build --analyze",
     "start": "NODE_ENV=production node server.js",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "heroku-postbuild": "yarn build",
-    "postinstall": "yarn build"
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
