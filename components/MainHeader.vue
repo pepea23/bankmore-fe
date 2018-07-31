@@ -158,6 +158,6 @@
 
 <script>
 export default {
-  name: 'Menu-Header',
+  name: 'Main-Header',
 }
 </script>
