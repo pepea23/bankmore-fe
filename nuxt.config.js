@@ -34,13 +34,13 @@ module.exports = {
         body: true,
         ssr: false,
       },
-      { src: 'js/menumaker.min.js', body: true, ssr: false },
       {
         src:
           'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js',
         body: true,
         ssr: false,
       },
+      { src: 'js/menumaker.min.js', body: true, ssr: false },
     ],
   },
   /*
