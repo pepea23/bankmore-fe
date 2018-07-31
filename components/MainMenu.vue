@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6 col-6">
       <div class="logo">
-        <nuxt-link to="/" exact><img src="images/logo.png" alt="Bankmore+"></nuxt-link>
+        <nuxt-link to="/" exact><img src="images/logo.png" alt="Bankmore+" id="logo-bankmore"><b>Bankmore+</b></nuxt-link>
       </div>
     </div>
     <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
@@ -75,5 +75,9 @@ export default {
 .nuxt-link-exact-active > a,
 .next-link-active > a {
   color: #f51f8a !important;
+}
+
+#logo-bankmore {
+  height: 50px;
 }
 </style>
