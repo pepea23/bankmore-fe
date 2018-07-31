@@ -75,3 +75,6 @@ typings/
 
 # For formatting vue template
 format.html
+
+# built static
+dist
