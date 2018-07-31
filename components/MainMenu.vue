@@ -60,7 +60,7 @@ export default {
       return { open: this.isMobileMenuToggle ? true : false }
     },
     isMobile() {
-      return this.$mq === 'sm' ? true : false
+      return this.$mq === 'xs' || this.$mq === 'sm' ? true : false
     },
   },
   methods: {
