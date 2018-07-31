@@ -18,7 +18,8 @@ module.exports = {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       {
-        src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js',
+        src:
+          'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js',
         body: true,
         ssr: false,
       },
