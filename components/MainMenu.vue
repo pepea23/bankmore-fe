@@ -8,7 +8,7 @@
     </div>
     <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
       <div id="navigation" :class="activeSmallScreen">
-        <div v-if="isMobile" id="menu-button" :class="mobileMenuButton" @click="toggleMobileMenu()">Menu</div>
+        <div id="menu-button" :class="mobileMenuButton" @click="toggleMobileMenu()">Menu</div>
         <ul :style="showMobileMenu" :class="statusMobileMenu">
           <nuxt-link tag="li" to="/" exact>
             <a class="animsition-link">Home</a>
@@ -46,11 +46,16 @@ export default {
     }
   },
   computed: {
+    isMobile() {
+      return this.$mq === 'xs' || this.$mq === 'sm'
+    },
     activeSmallScreen() {
       return { 'small-screen': this.isMobile }
     },
     mobileMenuButton() {
-      return { 'menu-opened': this.isMobileMenuToggle }
+      return {
+        'menu-opened': this.isMobileMenuToggle,
+      }
     },
     showMobileMenu() {
       return {
@@ -59,9 +64,6 @@ export default {
     },
     statusMobileMenu() {
       return { open: this.isMobileMenuToggle }
-    },
-    isMobile() {
-      return this.$mq === 'xs' || this.$mq === 'sm'
     },
   },
   methods: {
