@@ -65,7 +65,6 @@ module.exports = {
   plugins: [
     { src: '~plugins/vue-sticky', ssr: false },
     { src: '~plugins/vue-mq', ssr: false },
-    { src: '~plugins/vue-breakpoint-component', ssr: false },
   ],
   /*
   ** Customize the progress bar color
@@ -76,7 +75,7 @@ module.exports = {
   */
   build: {
     extractCSS: true,
-    vendor: ['vue-sticky', 'vue-mq', 'vue-breakpoint-component'],
+    vendor: ['vue-sticky', 'vue-mq'],
     plugins: [
       new webpack.ProvidePlugin({
         $: 'jquery',
