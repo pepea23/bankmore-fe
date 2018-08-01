@@ -5,15 +5,21 @@
   "author": "Ultronix <ultronix.co>",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "node server.js",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "analyze": "nuxt build --analyze",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "heroku-postbuild": "echo 'Nuxt Build Call' && ./node_modules/.bin/nuxt build",
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
-    "nuxt": "^1.0.0"
+    "@nuxtjs/axios": "^5.3.1",
+    "express": "^4.16.3",
+    "nuxt": "^1.0.0",
+    "vue-breakpoint-component": "^1.0.3",
+    "vue-mq": "^0.2.1",
+    "vue-sticky": "^3.3.4"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
@@ -23,4 +29,3 @@
     "eslint-plugin-vue": "^4.0.0"
   }
 }
-
