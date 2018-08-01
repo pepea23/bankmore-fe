@@ -39,7 +39,7 @@
 
 <script>
 export default {
-  name: 'Menu-Header',
+  name: 'Main-Menu',
   data() {
     return {
       isMobileMenuToggle: false,

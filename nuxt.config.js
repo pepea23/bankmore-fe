@@ -48,7 +48,6 @@ module.exports = {
         body: true,
         ssr: false,
       },
-      { src: 'js/menumaker.min.js', body: true, ssr: false },
     ],
   },
   /*
