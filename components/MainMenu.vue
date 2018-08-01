@@ -8,7 +8,7 @@
     </div>
     <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
       <div id="navigation" :class="activeSmallScreen">
-        <div v-if="isMobile" id="menu-button" :class="mobileMenuButton" @click="toggleMobileMenu()">Menu</div>
+        <div v-show="isMobile" id="menu-button" :class="mobileMenuButton" @click="toggleMobileMenu()">Menu</div>
         <ul :style="showMobileMenu" :class="statusMobileMenu">
           <nuxt-link tag="li" to="/" exact>
             <a class="animsition-link">Home</a>
