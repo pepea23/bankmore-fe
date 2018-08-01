@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
-      <!-- <div id="navigation" :class="activeSmallScreen">
+      <div id="navigation" :class="activeSmallScreen">
         <div v-if="isMobile" id="menu-button" :class="mobileMenuButton" @click="toggleMobileMenu()">Menu</div>
         <ul :style="showMobileMenu" :class="statusMobileMenu">
           <nuxt-link tag="li" to="/" exact>
@@ -32,8 +32,7 @@
              <a class="animsition-link">Articles</a>
           </nuxt-link>
         </ul>
-      </div> -->
-
+      </div>
     </div>
   </div>
 </template>
