@@ -8,10 +8,10 @@
     "dev": "node server.js",
     "build": "nuxt build",
     "analyze": "nuxt build --analyze",
-    "start": "NODE_ENV=production node server.js",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "heroku-postbuild": "nuxt build"
+    "heroku-postbuild": "echo 'Nuxt Build Call' && ./node_modules/.bin/nuxt build",
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
