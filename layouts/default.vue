@@ -7,7 +7,7 @@
 
 <script>
 const MainHeader = () =>
-  import(/* webpackChunkName:'main-header-components' */ '@/components/MainHeader')
+  import(/* webpackChunkName:'main-header-components' */ '@/components/common/MainHeader')
 
 export default {
   components: {

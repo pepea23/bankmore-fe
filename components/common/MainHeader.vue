@@ -7,7 +7,7 @@
 </template>
 
 <script>
-const MainMenu = () => import('@/components/MainMenu')
+const MainMenu = () => import('@/components/common/MainMenu')
 
 export default {
   name: 'Main-Header',
