@@ -4,10 +4,8 @@
             <div class="row">
                 <div class=" offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12 col-12 ">
                     <div class="mb60 text-center section-title text-white">
-                        <!-- section title start-->
                         <h1 class="text-white">สาเหตุที่ควรเลือกเรา</h1>
                     </div>
-                    <!-- /.section title start-->
                 </div>
             </div>
             <div class="row">
