@@ -8,7 +8,7 @@
   <div v-else>
     <li>User Not found</li>
   </div>
-  <HowToEntry></HowToEntry>
+  
 </div>
 </template>
 
@@ -34,10 +34,7 @@ export default {
   data() {
     return {}
   },
-  components:{
-    HowToEntry,
-
-  },
+ 
 }
 </script>
 
