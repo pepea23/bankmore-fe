@@ -1,14 +1,14 @@
 <template>
     <div class="bg-white section-space80">
         <div class="container">
-             <div class="coporate">
+            <div class="coporate">
                 <div class="form" >
-                    <form class="register_form">
+                    <form class="register_form" name="coporate_form" method="post" action="SaveForm_coporate.php" onsubmit="doSubmit(this)" target="_blank">
                         <fieldset>
                              <legend>coporate:</legend>
                                 company_name      : <input type="text" id="company_name"/><br>
                                 registered_number : <input type="text" id="registered_number"/><br>
-                                date_of_registration : <input type="text" id="date_of_registration"/><br>
+                                date_of_registration : <input type="date" id="date_of_registration"/><br>
                                 the_number_of_directors : <input type="text" id="the_number_of_directors"/><br>
                                 signing_conditions : <input type="text" id="signing_conditions"/><br>
                                 business_type     : <input type="text" id="business_type"/><br>
@@ -20,14 +20,19 @@
                         </fieldset>
                     </form>                   
                 </div>
-			 	
 	        </div>
         </div>
     </div>
 </template>
 
 <script>
+function doSubmit(form) {
+    alert("Thank you")
+    
+    location.href = '@/pages/index.vue'
+};
+
 export default {
-  name: 'SellForm',
+  name: 'SellFormRegister_coporate',
 }
 </script>
