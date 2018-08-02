@@ -16,7 +16,6 @@
                                 status(single/marred/other) : <input type="text" id="status_single-marred-other"/><br>                    
                                 number_of-Child : <input type="text" id="number_of_child"/><br>
                                 education  : <input type="text" id="education"/><br>
-
                                 job        : <input type="text" id="job"/><br>
                                 company_name : <input type="text" id="company_name"/><br>
                                 business_type : <input type="text" id="business_type"/><br>
@@ -36,8 +35,8 @@
 <script>
 function doSubmit(form) {
     alert("Thank you")
-    
-    location.href = '@/pages/index.vue'
+
+    this.$router.push('@/pages/index.vue')
 };
 
 export default {

@@ -29,7 +29,7 @@
 function doSubmit(form) {
     alert("Thank you")
     
-    location.href = '@/pages/index.vue'
+    this.$router.push('@/pages/index.vue')
 };
 
 export default {
