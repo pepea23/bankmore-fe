@@ -8,10 +8,13 @@
   <div v-else>
     <li>User Not found</li>
   </div>
+    <HowToEntry></HowToEntry>
 </div>
 </template>
 
 <script>
+const HowToEntry = () => import('@/components/borrow/HowToEntry')
+
 export default {
   title: 'borrow',
   async asyncData({ app, params }) {
@@ -30,7 +33,12 @@ export default {
   },
   data() {
     return {}
+  }, 
+  components:{
+    HowToEntry,
+
   },
+
 }
 </script>
 
