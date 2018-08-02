@@ -36,6 +36,6 @@
 
 <script>
 export default {
-  name: 'ChooseUs',
+  name: 'Choose-Us',
 }
 </script>
