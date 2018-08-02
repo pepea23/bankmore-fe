@@ -49,19 +49,10 @@ export default {
 </script>
 
 <style scoped>
-#logo-bankmore {
-  height: 50px;
-}
-
 .nuxt-link-exact-active > a,
 .next-link-active > a {
   color: #f51f8a !important;
 }
-
-.bg-light {
-  background: #fff !important;
-}
-
 .nav-link {
   font-family: 'Poppins';
   font-weight: 500;
