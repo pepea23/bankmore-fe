@@ -7,7 +7,8 @@
 </template>
 
 <script>
-const MainMenu = () => import('@/components/common/MainMenu')
+const MainMenu = () =>
+  import(/* webpackChunkName:'main-menu-component' */ '@/components/common/MainMenu')
 
 export default {
   name: 'Main-Header',
