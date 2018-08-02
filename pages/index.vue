@@ -8,10 +8,19 @@
   <div v-else>
     <li>User Not found</li>
   </div>
+  <banner></banner>
+  <apply-loan></apply-loan>
+  <choose-us></choose-us>
+  <user-review></user-review>
 </div>
 </template>
 
 <script>
+const Banner = () => import('@/components/home/Banner')
+const ApplyLoan = () => import('@/components/home/ApplyLoan')
+const ChooseUs = () => import('@/components/home/ChooseUs')
+const UserReview = () => import('@/components/home/UserReview')
+
 export default {
   title: 'หน้าแรก',
   async asyncData({ app, params }) {
@@ -30,6 +39,12 @@ export default {
   },
   data() {
     return {}
+  },
+  components: {
+    Banner,
+    ApplyLoan,
+    ChooseUs,
+    UserReview,
   },
 }
 </script>
