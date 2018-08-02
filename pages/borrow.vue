@@ -14,7 +14,9 @@
 
 <script>
 const HowToEntry = () => import('@/components/borrow/HowToEntry')
-
+const SellFormRegister = () => import('@components/borrow/SellFormRegister')
+const SellFormRegister_person = () => import('@/components/borrow/SellFormRegister_person')
+const SellFormRegister_coporate = () => import('@/components/borrow/SellFormRegister_coporate')
 export default {
   title: 'borrow',
   async asyncData({ app, params }) {
@@ -36,7 +38,9 @@ export default {
   }, 
   components:{
     HowToEntry,
-
+    SellFormRegister,
+    SellFormRegister_person,
+    SellFormRegister_coporate,
   },
 
 }
