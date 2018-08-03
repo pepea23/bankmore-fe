@@ -98,16 +98,16 @@ module.exports = {
         })
       }
       if (!isDev) {
-        config.plugins.push(
-          new PurgecssPlugin({
-            paths: glob.sync([
-              path.join(__dirname, './pages/**/*.vue'),
-              path.join(__dirname, './layouts/**/*.vue'),
-              path.join(__dirname, './components/**/*.vue'),
-            ]),
-            whitelist: ['html', 'body'],
-          }),
-        )
+        // config.plugins.push(
+        //   new PurgecssPlugin({
+        //     paths: glob.sync([
+        //       path.join(__dirname, './pages/**/*.vue'),
+        //       path.join(__dirname, './layouts/**/*.vue'),
+        //       path.join(__dirname, './components/**/*.vue'),
+        //     ]),
+        //     whitelist: ['html', 'body'],
+        //   }),
+        // )
       }
     },
   },
