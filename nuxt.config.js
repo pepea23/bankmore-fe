@@ -2,6 +2,8 @@ const webpack = require('webpack')
 const path = require('path')
 const glob = require('glob-all')
 
+const PurgecssPlugin = require('purgecss-webpack-plugin')
+
 module.exports = {
   /*
   ** Headers of the page
