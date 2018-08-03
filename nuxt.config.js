@@ -114,6 +114,16 @@ module.exports = {
   /*
   ** Router
   */
+  render: {
+    bundleRenderer: {
+      shouldPreload: (file, type) => {
+        return ['script', 'style', 'font'].includes(type)
+      },
+    },
+  },
+  /*
+  ** Router
+  */
   router: {},
   /*
   ** Module
