@@ -24,16 +24,8 @@ module.exports = {
       {
         rel: 'stylesheet',
         href:
-          'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css',
-        ssr: false,
-        lazyload: true,
-      },
-      {
-        rel: 'stylesheet',
-        href:
           'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CMerriweather:300,300i,400,400i,700,700i',
         body: true,
-        ssr: false,
         lazyload: true,
       },
     ],
@@ -41,39 +33,43 @@ module.exports = {
       {
         src:
           'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js',
+        integrity: 'sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=',
+        crossorigin: 'anonymous',
         body: true,
-        ssr: false,
       },
       {
         src:
-          'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
+          'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/popper.min.js',
+        integrity: 'sha256-buCJtv5E9D2vlgk/iJYywBD8xf1M3lL7mzKJn3Oqa1A=',
+        crossorigin: 'anonymous',
         body: true,
-        ssr: false,
       },
       {
         src:
-          'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
+          'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js',
+        integrity: 'sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=',
+        crossorigin: 'anonymous',
         body: true,
-        ssr: false,
       },
       {
         src:
           'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js',
+        integrity: 'sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=',
+        crossorigin: 'anonymous',
         body: true,
-        ssr: false,
       },
     ],
   },
   /*
   ** Import Style
   */
-  css: ['@/static/css/style.css'],
+  css: ['@/static/css/bootstrap.min.css', '@/static/css/style.css'],
   /*
   ** Import Plugin
   */
   plugins: [
-    { src: '~plugins/vue-sticky', ssr: false },
-    { src: '~plugins/vue-mq', ssr: false },
+    { src: '@/plugins/vue-sticky', ssr: false },
+    { src: '@/plugins/vue-mq', ssr: false },
   ],
   /*
   ** Customize the progress bar color
