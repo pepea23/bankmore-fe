@@ -79,7 +79,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    extractCSS: true,
+    // extractCSS: true,
     vendor: ['vue-sticky', 'vue-mq'],
     plugins: [
       new webpack.ProvidePlugin({
