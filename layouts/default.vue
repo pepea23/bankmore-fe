@@ -7,10 +7,8 @@
 </template>
 
 <script>
-const MainHeader = () =>
-  import(/* webpackChunkName:'main-header-component' */ '@/components/common/MainHeader')
-const MainFooter = () =>
-  import(/* webpackChunkName:'main-footer-component' */ '@/components/common/MainFooter')
+const MainHeader = () => import('@/components/common/MainHeader')
+const MainFooter = () => import('@/components/common/MainFooter')
 
 export default {
   components: {
