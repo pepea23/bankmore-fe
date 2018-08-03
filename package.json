@@ -10,7 +10,7 @@
     "analyze": "nuxt build --analyze",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "heroku-postbuild": "echo 'Nuxt Build Call' && ./node_modules/.bin/nuxt build",
+    "heroku-postbuild": "yarn && ./node_modules/.bin/nuxt build",
     "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
