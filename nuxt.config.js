@@ -1,4 +1,6 @@
 const webpack = require('webpack')
+const path = require('path')
+const glob = require('glob-all')
 
 module.exports = {
   /*
@@ -91,6 +93,18 @@ module.exports = {
           loader: 'eslint-loader',
           exclude: /(node_modules)/,
         })
+      }
+      if (!isDev) {
+        config.plugins.push(
+          new PurgecssPlugin({
+            paths: glob.sync([
+              path.join(__dirname, './pages/**/*.vue'),
+              path.join(__dirname, './layouts/**/*.vue'),
+              path.join(__dirname, './components/**/*.vue'),
+            ]),
+            whitelist: ['html', 'body'],
+          }),
+        )
       }
     },
   },
