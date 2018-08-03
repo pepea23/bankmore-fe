@@ -39,15 +39,15 @@ module.exports = {
       },
       {
         src:
-          'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/popper.min.js',
-        integrity: 'sha256-buCJtv5E9D2vlgk/iJYywBD8xf1M3lL7mzKJn3Oqa1A=',
+          'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js',
+        integrity: 'sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=',
         crossorigin: 'anonymous',
         body: true,
       },
       {
         src:
-          'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js',
-        integrity: 'sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=',
+          'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js',
+        integrity: 'sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=',
         crossorigin: 'anonymous',
         body: true,
       },
