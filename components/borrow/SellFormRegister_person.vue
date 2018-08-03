@@ -28,28 +28,28 @@
   		</div>
   		<div class="row">
     		<div class="form-group col-md-7">
-      			<label for="inputCity">City</label>
+      			<label >City</label>
       				<input type="text" class="form-control" id="inputCity">
     		</div>
     		<div class="form-group col">
-      			<label for="inputState">State</label>
+      			<label>State</label>
       				<select id="inputState" class="form-control">
         				<option selected>Choose...</option>
         				<option>...</option>
       				</select>
     		</div>
     		<div class="form-group col">
-    			<label for="inputTel">Tel</label>
+    			<label>Tel</label>
      	 			<input type="tel" class="form-control" id="inputTel" placeholder="Tel">
    			</div>
    		</div>
    		<div class="row">
    			<div class="col-md-3">
-   				<label for="inputBirthDay">Birth day</label>
+   				<label>Birth day</label>
       			<input type="date" class="form-control" id="inputBirthDay" placeholder="birth day">
     		</div>
 			<div class="col-md-2">   	
-				<label for="inputStatus">Status</label>
+				<label>Status</label>
 				<div class="container">
 			 		<input type="radio" name="status" value="single" id="inputSingle" >Single
 			 		<div style=" margin-right: 1px"></div>
@@ -57,11 +57,11 @@
          		</div>
 			</div>
 			<div class="col-3">
-				<label for="inputChild">Number of child</label>
+				<label>Number of child</label>
       		<input type="number" class="form-control" id="inputChild" min="0">
 			</div>
 			<div class="form-group col">
-      			<label for="inputEducation">Education</label>
+      			<label>Education</label>
       				<input type="text" class="form-control" id="inputEducation">
     		</div>
    		</div>
@@ -70,20 +70,20 @@
     <div class="container">
    		<div class="row">
    			<div class="form-group col-md-3">
-      			<label for="inputJob">Job</label>
+      			<label>Job</label>
       			<input type="text" class="form-control" id="inputJob">
     		</div>
     			<div class="form-group col-md-2">
-      			<label for="inputRank">Rank</label>
+      			<label>Rank</label>
       			<input type="text" class="form-control" id="inputRank">
     		</div>
     		<div class="form-group col-md-4">
-      			<label for="inputCompanyName">Company name</label>
+      			<label>Company name</label>
       			<input type="text" class="form-control" id="inputCompanyName">
     		</div>
     		<div class="form-group col-md-3">
       			<div class="form-group ">
-      			<label for="inputCompanyType">Company type</label>
+      			<label>Company type</label>
       				<select id="inputCompanyType" class="form-control">
         				<option selected>Choose...</option>
         				<option>...</option>
@@ -94,15 +94,15 @@
    			</div>
    			<div class="row">
 				<div class="col-md-3">
-					<label for="inputYesrOfWork">Years of work</label>
+					<label>Years of work</label>
       					<input type="number" class="form-control" id="inputYearOfWork" min="0">
 				</div>
    				<div class="col-md-3">
-					<label for="inputSalary">Salary</label>
+					<label>Salary</label>
       					<input type="number" class="form-control" id="inputSalary" min="0">
 				</div>
    				<div class="col-md-3">
-					<label for="inputOtherIncome">Other income</label>
+					<label>Other income</label>
       					<input type="number" class="form-control" id="inputOtherIncome" min="0">
 				</div>
    			</div>
@@ -114,7 +114,22 @@
                     </div>
                   </div>
               </div>
+               <label>Buy</label>
+              <div class="row">
+                  <div class="col"> 
+					  
+      					<input type="number" class="form-control" id="input" min="0" max="1000000000">
+                  </div>
+                  <div class="col-md-1">บาท</div>
+                  <div class="col">
+                        <input type="text" class="form-control" id="input" placeholder="ถ้าจำนวนเงินมากกว่าหนึ่งร้อยล้านบาท" >
+				</div>
+                <div class="col-md-1">บาท</div>
+                  </div>
+
+              
         </div>
+        
         <input type="submit" value="Submit" from="RegisFromPerson" onclisk="doSubmit(this)">
 	</form>
 </div>
@@ -125,7 +140,7 @@
 
 <script>
 function doSubmit(form) {
-  alert("Thank you");
+  alert("Thank you")
 
   this.$router.push("@/pages/index.vue");
 }

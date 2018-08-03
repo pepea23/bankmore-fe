@@ -79,6 +79,20 @@
                     </div>
                   </div>
               </div>
+              <label>Buy</label>
+              <div class="row">
+                  <div class="col"> 
+					  
+      					<input type="number" class="form-control" id="input" min="0" max="1000000000">
+                  </div>
+                  <div class="col-md-1">บาท</div>
+                  <div class="col">
+                        <input type="text" class="form-control" id="input" placeholder="ถ้าจำนวนเงินมากกว่าหนึ่งร้อยล้านบาท" >
+				</div>
+                <div class="col-md-1">บาท</div>
+                  </div>
+
+              
             </div>
              <input type="submit" value="Submit" form="RegisFromCoporate" onclisk="doSubmit(this)">
 	</form>
