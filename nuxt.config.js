@@ -60,12 +60,7 @@ module.exports = {
   /*
   ** Import Style
   */
-  css: [
-    '@/static/css/bootstrap.min.css',
-    '@/static/css/style.css',
-    '@/static/css/font-awesome.min.css',
-    '@/static/css/fontello.css',
-  ],
+  css: ['@/static/css/bootstrap.min.css', '@/static/css/style.css'],
   /*
   ** Import Plugin
   */
