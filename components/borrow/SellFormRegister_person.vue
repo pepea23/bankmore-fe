@@ -23,7 +23,7 @@
                                 years_of_work : <input type="text" id="years_of_work"/><br>
                                 salary     : <input type="text" id="salary"/><br>
                                 other_income : <input type="text" id="other_income"/><br>
-				            <input type="submit" value="Submit">  
+				            <input type="submit" value="Submit" onclick="doSummit(form)"/>  
                         </fieldset>
                     </form>
                 </div>

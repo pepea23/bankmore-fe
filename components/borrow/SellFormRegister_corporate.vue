@@ -3,9 +3,9 @@
         <div class="container">
             <div class="coporate">
                 <div class="form" >
-                    <form class="register_form" name="coporate_form" method="post" action="SaveForm_coporate.php" onsubmit="doSubmit(this)" target="_blank">
+                    <form class="register_form" name="coporate_form" method="post" action="SaveForm_coporate.php" target="_blank">
                         <fieldset>
-                             <legend>coporate:</legend>
+                             <legend>corporate:</legend>
                                 company_name      : <input type="text" id="company_name"/><br>
                                 registered_number : <input type="text" id="registered_number"/><br>
                                 date_of_registration : <input type="date" id="date_of_registration"/><br>
@@ -16,7 +16,7 @@
                                 purpose_of_purchase : <input textarea rows="4" cols="50" id="purpose_of_purchase"/><br>
                                 amount_of_deposit : <input type="text" id="amount_of_deposit"/><br>
                                 compact           : <input type="text" id="compact"/><br>
-                                <input type="submit" value="Submit">  
+                                <input type="submit" value="Submit" onclick="doSubmit(form)"/>  
                         </fieldset>
                     </form>                   
                 </div>
