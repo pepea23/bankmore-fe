@@ -69,19 +69,21 @@
     <h3 style="margin-top: 20px">Add your business</h3><br>
     <div class="container">
    		<div class="row">
-   			<div class="form-group col-md-3">
+   			<div class="form-group col-md-4">
       			<label>Job</label>
       			<input type="text" class="form-control" id="inputJob">
     		</div>
-    			<div class="form-group col-md-2">
+    			<div class="form-group col-md-3">
       			<label>Rank</label>
       			<input type="text" class="form-control" id="inputRank">
     		</div>
-    		<div class="form-group col-md-4">
+    		<div class="form-group col-md-5">
       			<label>Company name</label>
       			<input type="text" class="form-control" id="inputCompanyName">
     		</div>
-    		<div class="form-group col-md-3">
+   			</div>
+   			<div class="row">
+                   <div class="form-group col-md-3">
       			<div class="form-group ">
       			<label>Company type</label>
       				<select id="inputCompanyType" class="form-control">
@@ -90,9 +92,6 @@
       				</select>
     			</div>
     		</div>
-   		
-   			</div>
-   			<div class="row">
 				<div class="col-md-3">
 					<label>Years of work</label>
       					<input type="number" class="form-control" id="inputYearOfWork" min="0">
@@ -114,22 +113,68 @@
                     </div>
                   </div>
               </div>
-               <label>Buy</label>
-              <div class="row">
-                  <div class="col"> 
-					  
-      					<input type="number" class="form-control" id="input" min="0" max="1000000000">
-                  </div>
-                  <div class="col-md-1">บาท</div>
+          
+    </div>
+    <h3 style="margin-top: 20px">รายระเอียดขายฝาก</h3><br>
+    <div class="container">
+    <div class="row">
                   <div class="col">
-                        <input type="text" class="form-control" id="input" placeholder="ถ้าจำนวนเงินมากกว่าหนึ่งร้อยล้านบาท" >
-				</div>
-                <div class="col-md-1">บาท</div>
-                  </div>
-
-              
-        </div>
-        
+                      <label>จำนวนเงินยอดฝากที่ต้องการ</label>
+                        <input type="text" class="form-control" id="input" placeholder="บาท" >
+			      </div>
+               
+                  <div class="col">
+                      <label>ดอกเบี้ยที่ต้องการ</label>
+                        <input type="text" class="form-control" id="input" placeholder="บาทต่อปี" >
+			      </div>
+            
+            </div>
+                <div class="row">     
+                     <div class="col">
+                      <label>ระยะเวลาขายฝากที่ต้องการ(ต่ำสุดสามเดือน-สูงสุด60เดือน)</label>
+                        <input type="number" class="form-control" id="input" min="3" max="60" placeholder="เดือน">   
+			        </div>
+                    <div class="col">
+                        <label>หากต้องการระยะยาวกว่าโปรดระบุ</label>
+                        <input type="text" class="form-control" id="input" placeholder="เดือน" >  
+                    </div>
+                </div>   
+                 <label>รายระเอียดทรัพย์สินที่ต้องการขายฝาก</label>
+                <div class="row">
+                    <div class="col">
+                    <label>เลขที่โฉนด</label>
+                    <input type="text" class="form-control" id="input" >  
+                </div>
+                    <div class="col">
+                    <label>ที่ตั้งโฉนด</label>
+                    <input type="text" class="form-control" id="input" >  
+                </div>
+                <div class="col">
+                    <label>ขนาดที่ดิน</label>
+                    <input type="text" class="form-control" id="input" placeholder=" ตารางนิ้ว/เมตร/วา/กิโลเมตร" >  
+                </div>
+                </div>
+                <label>ชื่อผู้ครอบครองโฉนด</label>
+                 <div class="row">
+                    <div class="col">
+      			        <input type="text" class="form-control" id="input" placeholder="First name">
+    		        </div>
+    		        <div class="col">
+      			        <input type="text" class="form-control" id="input" placeholder="Last name">
+    		        </div>
+                </div>
+                 <label>Upload เอกสารโฉนดที่ดิน/รูปทรัพย์สิน/แผนที่ตั้งทรัพย์สิน</label>
+                 <div class="row">
+                    <div class="col">
+      			        <input type="file" class="form-control" id="input" name="input" multiple>
+                    </div>
+                
+                 </div>
+                 <label>แผนที่</label>
+               <center> <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3787.6620210759834!2d99.3986862!3d18.3170581!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sth!2sth!4v1533319944552" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+    
+    </div>
+    
         <input type="submit" value="Submit" from="RegisFromPerson" onclisk="doSubmit(this)">
 	</form>
 </div>
