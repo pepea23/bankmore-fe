@@ -1,35 +1,52 @@
 <template>
-<div>
-  <div v-if="users">
-    <ul v-for="item in users" :key="item.id">
-      <li>{{item.username}}</li>
-    </ul>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="wrapper-content">
+          <div class="row">
+            <AuctionItem v-for="item in items" :key="item.id" :title="item.title" :image="item.image" :description="item.description" :link="item.link" buttonText="Show More"/>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div v-else>
-    <li>User Not found</li>
-  </div>
-</div>
 </template>
 
 <script>
+const AuctionItem = () => import('@/components/widget/AuctionItem')
+
 export default {
   title: 'หน้าแรก',
-  async asyncData({ app, params }) {
-    let users = null
-    try {
-      const result = await app.$axios.$get(
-        'http://www.mocky.io/v2/5b60395d2f0000630046177b',
-      )
-      users = result
-    } catch (error) {
-      console.log('error', error)
-    }
-    return {
-      users,
-    }
+  components: {
+    AuctionItem,
   },
   data() {
-    return {}
+    return {
+      items: [
+        {
+          id: 1,
+          title: 'Test Auction',
+          image: 'images/blog-img.jpg',
+          description: 'Test description',
+          link: 'auction/1',
+        },
+         {
+          id: 2,
+          title: 'Test Auction 2',
+          image: 'images/blog-img.jpg',
+          description: 'Test description 2',
+          link: 'auction/2',
+        },
+        {
+          id: 3,
+          title: 'Test Auction 3',
+          image: 'images/blog-img.jpg',
+          description: 'Test description 3',
+          link: 'auction/3',
+        },
+      ],
+    }
   },
 }
 </script>
