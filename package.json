@@ -18,6 +18,7 @@
     "express": "^4.16.3",
     "glob-all": "^3.1.0",
     "nuxt": "^1.0.0",
+    "purgecss-webpack-plugin": "^1.2.0",
     "vue-breakpoint-component": "^1.0.3",
     "vue-mq": "^0.2.1",
     "vue-sticky": "^3.3.4"
@@ -27,7 +28,6 @@
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0",
-    "purgecss-webpack-plugin": "^1.2.0"
+    "eslint-plugin-vue": "^4.0.0"
   }
 }
