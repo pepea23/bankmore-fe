@@ -100,6 +100,9 @@ p:last-child { margin-bottom: 0px; }
 .text-primary { color: #15549a !important; }
 .border-default{border-color: #f51f8a !important;}
 .border-top-default{border-top:3px solid #f51f8a;}
+#logo-bankmore {
+  height: 50px;
+}
 /*-----------------------------------
 Space css class
 -----------------------------------*/
