@@ -1,8 +1,4 @@
 const webpack = require('webpack')
-const path = require('path')
-const glob = require('glob-all')
-
-const PurgecssPlugin = require('purgecss-webpack-plugin')
 
 module.exports = {
   /*
@@ -82,7 +78,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    extractCSS: true,
     vendor: ['vue-sticky', 'vue-mq'],
     plugins: [
       new webpack.ProvidePlugin({
@@ -99,18 +94,6 @@ module.exports = {
           loader: 'eslint-loader',
           exclude: /(node_modules)/,
         })
-      }
-      if (!isDev) {
-        config.plugins.push(
-          new PurgecssPlugin({
-            paths: glob.sync([
-              path.join(__dirname, './pages/**/*.vue'),
-              path.join(__dirname, './layouts/**/*.vue'),
-              path.join(__dirname, './components/**/*.vue'),
-            ]),
-            whitelist: ['html', 'body'],
-          }),
-        )
       }
     },
   },
