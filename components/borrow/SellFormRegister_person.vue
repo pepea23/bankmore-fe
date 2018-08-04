@@ -170,8 +170,20 @@
                     </div>
                 
                  </div>
+                   <div class="col"> 
                  <label>แผนที่</label>
-               <center> <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3787.6620210759834!2d99.3986862!3d18.3170581!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sth!2sth!4v1533319944552" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+                <center> <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3787.6620210759834!2d99.3986862!3d18.3170581!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sth!2sth!4v1533319944552" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+                 </div>
+              
+              <label>การดำเนินกิจการทรัพย์สินที่ขายฝาก</label>
+                <div class="row">
+                    <div class="col-md-12">
+			 		        <input type="radio" name="statusCompany" value="non" id="input" >ไม่ได้ดำเนินการ
+                            
+             		        <input type="radio" name="statusCompany" value="on" id="inputMarried">มีการดำเนินการเป็น :<input type="text" name="operate" id="inputOperate">
+                </div>
+
+    </div>
     
     </div>
     
