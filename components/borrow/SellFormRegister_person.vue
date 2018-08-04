@@ -181,7 +181,7 @@ crossorigin = "anonymous" >
                     <center> <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3787.6620210759834!2d99.3986862!3d18.3170581!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sth!2sth!4v1533319944552" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
                 </div>
 
-<div class="col" style="margin-top:20px"></div>
+            <div class="col" style="margin-top:20px"></div>
 
 			<div class="row">
                 <div class="col">
@@ -206,7 +206,16 @@ crossorigin = "anonymous" >
 			</div>
 
             </div>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <div class="col" style="max-width:500px">
+                    <p>ข้อตกลง : ข้าพเจ้าขอรับรองว่าข้อูลตามรายละเอียดข้างต้นเป็นความจริงทุกประการ โดยข้าพเจ้ายินยอมให้บริษัทฯ ติดต่อ สอบถาม และ/หรือตรวจสอบข้อมูลรายละเอียดต่างๆของขาพเจ้า และ/หรือ บุคคลที่เกี่ยวข้องได้จากบุคคล และ/หรือ นิติบุคคลอื่นทั้งหมด และไม่ว่าด้วยวิธีใดๆ ตลอดจนยินยอมให้บริษัทฯ เปิดเผยข้อมูลดังกล่าวแก่บุคคล และ/หรือ นิติบุคคลใดได้ตามที่บริษัทฯ เห็นสมควร ทั้งนี้ ข้าพเข้าจะไม่เรียกร้องค่าตอบแทน และ/หรือ ค่าเสียหายใดๆที่เกิดขึ้นเนื่องจากการกระทำดังกล่าวของบริษัทฯทั้งสิ้น นอกจากนี้ในการที่ข้าพเจ้าขอสินเชื่อประเภทต่างๆ จากบริษัทนั้น ข้าพเจ้ายินยอมปฏิบัติตามระเเบียบ ข้อกำหนดและเงื่อนไขของบริษัทฯและเงื่อนไขของบริษัทฯ ทุกประการและยินยอมเสียค่า ธรรมเนียม ตามระเบียบ ข้อกำหนดและเงื่อนไขของบริษัทฯ โดยข้าพเจ้าตกลงเป็นผู้ชำระเองทั้งสิ้น </p>
+                    <label>ยืนยัน</label><br>
+                    <input type="checkbox" name="confirm" value="ture" id="input">ตกลง<br>
+                    <label>ต้องการรับข้อมูลข่าวสารรวมถึงโปรโมชั่นต่างๆของบริษัทฯ หรือไม่</label><br>
+                    <input type="checkbox" name="regisNew" value="ture" id="input">ตกลง<br>
 
+                </div>
+            </div>
 
             </div>
             <input type="submit" value="Submit" from="RegisFromPerson" onclisk="doSubmit(this)">
@@ -220,7 +229,7 @@ crossorigin = "anonymous" >
 
 <script>
 function doSubmit(form) {
-  alert("Thank you")
+  alert("Thank you");
 
   this.$router.push("@/pages/index.vue");
 }
