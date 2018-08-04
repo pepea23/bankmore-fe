@@ -156,15 +156,32 @@
                 <center> <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3787.6620210759834!2d99.3986862!3d18.3170581!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sth!2sth!4v1533319944552" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
                  </div>
               
-              <label>การดำเนินกิจการทรัพย์สินที่ขายฝาก</label>
-                <div class="row">
-                    <div class="col-md-12">
-			 		        <input type="radio" name="statusCompany" value="non" id="input" >ไม่ได้ดำเนินการ
-                            
-             		        <input type="radio" name="statusCompany" value="on" id="inputMarried">มีการดำเนินการเป็น :<input type="text" name="operate" id="inputOperate">
-                </div>
+             <div class="col" style="margin-top:20px"></div>
 
-    </div>
+			<div class="row">
+                <div class="col">
+					 <label>การดำเนินกิจการทรัพย์สินที่ขายฝาก</label><br>
+                    <input type="radio" name="statusCompany" value="non" id="input">ไม่ได้ดำเนินการ
+
+                    <input type="radio" name="statusCompany" value="on" id="inputMarried">มีการดำเนินการเป็น :<input type="text" name="operate" id="inputOperate">
+                </div>
+				    <div class="col-md-3">
+							<label>สนใจผุ้รับฝากซื้อหาผู้เช่า</label><br>
+					<input type="radio" name="status_assept" value="true" id="inputYes">Yes
+                   			 <div style=" margin-right: 1px"></div>
+                    <input type="radio" name="status_assept" value="false" id="inputNo">No
+                    </div>
+				<div class="col-md-3">
+				<label>ต้องการรับผลตอบรับช่องทางไหน</label><br>
+				<select id="inputCompanyTypeCoporate" class="form-control">
+        				<option selected>Telephone</option>
+        				<option>Email</option>
+      				</select>
+
+			</div>
+
+            </div>
+
     </div>
              <input type="submit" value="Submit" form="RegisFromCoporate" onclisk="doSubmit(this)">
 	</form>
