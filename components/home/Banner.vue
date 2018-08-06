@@ -7,8 +7,9 @@
     </ul>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="slider-img"><img src="@/static/images/slider-1.jpg" alt="Borrow - Loan Company Website Template" class="">
-          <div class="container">
+        <div class="slider-img">
+          <img src="@/static/images/slider-1.jpg" alt="Borrow - Loan Company Website Template" />
+          <div class="container d-flex justify-content-center">
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
               <div class="slider-captions">
                 <h1 class="slider-title">Choose the Best Loan. Apply Now!</h1>
@@ -21,8 +22,9 @@
         </div>
       </div>
       <div class="carousel-item">
-        <div class="slider-img"><img src="@/static/images/slider-2.jpg" alt="Borrow - Loan Company Website Template" class="">
-          <div class="container">
+        <div class="slider-img">
+          <img src="@/static/images/slider-2.jpg" alt="Borrow - Loan Company Website Template" />
+          <div class="container d-flex justify-content-center">
             <div class=" col-xl-6 col-lg-6 col-md-12  col-sm-12 col-12">
               <div class="slider-captions">
                 <h1 class="slider-title">Award winning car loans with Borrow</h1>
@@ -34,8 +36,9 @@
         </div>
       </div>
       <div class="carousel-item">
-        <div class="slider-img"><img src="@/static/images/slider-3.jpg" alt="Borrow - Loan Company Website Template" class="">
-          <div class="container">
+        <div class="slider-img">
+          <img src="@/static/images/slider-3.jpg" alt="Borrow - Loan Company Website Template" />
+          <div class="container d-flex justify-content-center">
             <div class="col-xl-6 col-lg-6 col-md-12  col-sm-12 col-12">
               <div class="slider-captions">
                 <h1 class="slider-title">Education Loan From Borrow Rate Low Of Interest.</h1>
@@ -47,10 +50,10 @@
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <a class="carousel-control-prev" href="#banner" data-slide="prev">
       <span class="carousel-control-prev-icon"></span>
     </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
+    <a class="carousel-control-next" href="#banner" data-slide="next">
       <span class="carousel-control-next-icon"></span>
     </a>
   </div>
