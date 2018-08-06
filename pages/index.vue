@@ -1,19 +1,22 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-        <div class="wrapper-content">
-          <div class="row">
-            <AuctionItem v-for="item in items" :key="item.id" :title="item.title" :image="item.image" :description="item.description" :link="item.link" buttonText="Show More" />
-            <banner></banner>
-            <apply-loan></apply-loan>
-            <choose-us></choose-us>
-            <user-review></user-review>
+  <div>
+    <banner></banner>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+          <div class="wrapper-content">
+            <div class="row">
+              <AuctionItem v-for="item in items" :key="item.id" :title="item.title" :image="item.image" :description="item.description" :link="item.link" buttonText="Show More" />
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <apply-loan></apply-loan>
+    <choose-us></choose-us>
+    <user-review></user-review>
   </div>
+
 </template>
 
 <script>
