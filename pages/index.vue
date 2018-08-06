@@ -5,21 +5,25 @@
         <div class="wrapper-content">
           <div class="row">
             <AuctionItem v-for="item in items" :key="item.id" :title="item.title" :image="item.image" :description="item.description" :link="item.link" buttonText="Show More" />
+            <banner></banner>
+            <apply-loan></apply-loan>
+            <choose-us></choose-us>
+            <user-review></user-review>
           </div>
         </div>
       </div>
     </div>
   </div>
-<div>
-<ShowRate></ShowRate>
-</div>
 </template>
 
 <script>
 const AuctionItem = () => import('@/components/widget/AuctionItem')
-
-
 const ShowRate = () => import('@/components/home/ShowRate')
+const Banner = () => import('@/components/home/Banner')
+const ApplyLoan = () => import('@/components/home/ApplyLoan')
+const ChooseUs = () => import('@/components/home/ChooseUs')
+const UserReview = () => import('@/components/home/UserReview')
+
 export default {
   title: 'หน้าแรก',
   components: {
@@ -55,9 +59,13 @@ export default {
   data() {
     return {}
   },
-  components: { 
-   ShowRate,
-  }, 
+  components: {
+    ShowRate,
+    Banner,
+    ApplyLoan,
+    ChooseUs,
+    UserReview,
+  },
 }
 </script>
 
