@@ -5,36 +5,32 @@
         <div class="wrapper-content">
           <div class="row">
             <how-to-entry></how-to-entry>
+            <sell-form-register-corporate></sell-form-register-corporate>
+            <sell-form-register-person></sell-form-register-person>
           </div>
         </div>
       </div>
     </div>
   </div>
-<div>
-    <HowToEntry></HowToEntry>
-    <SellFormRegister_corporate></SellFormRegister_corporate>
-    <SellFormRegister_person></SellFormRegister_person>
-</div>
 </template>
 
 <script>
 const HowToEntry = () => import('@/components/borrow/HowToEntry')
-
-const HowToEntry = () => import('@/components/borrow/HowToEntry')
-const SellFormRegister_person = () => import('@/components/borrow/SellFormRegister_person')
-const SellFormRegister_corporate = () => import('@/components/borrow/SellFormRegister_corporate')
+const SellFormRegisterPerson = () =>
+  import('@/components/borrow/form/RegisterPersonForm')
+const SellFormRegisterCorporate = () =>
+  import('@/components/borrow/form/RegisterCorporateForm')
 export default {
   title: 'borrow',
-  
+
   data() {
     return {}
-  }, 
-  components:{
-    HowToEntry,
-    SellFormRegister_person,
-    SellFormRegister_corporate,
   },
-
+  components: {
+    HowToEntry,
+    SellFormRegisterPerson,
+    SellFormRegisterCorporate,
+  },
 }
 </script>
 
