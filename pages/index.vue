@@ -13,7 +13,11 @@
         </div>
       </div>
     </div>
+    <apply-loan></apply-loan>
+    <choose-us></choose-us>
+    <user-review></user-review>
   </div>
+
 </template>
 
 <script>
