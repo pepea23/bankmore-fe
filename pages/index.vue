@@ -4,8 +4,8 @@
       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="wrapper-content">
           <div class="row">
-            <auction-list :items="items"></auction-list>
             <banner></banner>
+            <auction-list :items="items"></auction-list>
             <apply-loan></apply-loan>
             <choose-us></choose-us>
             <user-review></user-review>
