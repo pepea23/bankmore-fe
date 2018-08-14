@@ -1,6 +1,6 @@
 <template>
-  <div >
-     <AuctionItem v-for="item in items" :key="item.id" :title="item.title" :image="item.image" :description="item.description" :link="item.link" buttonText="Show More" />
+  <div class="row mt-5">
+    <AuctionItem v-for="item in items" :key="item.id" :title="item.title" :image="item.image" :description="item.description" :link="item.link" buttonText="Show More" />
   </div>
 </template>
 
