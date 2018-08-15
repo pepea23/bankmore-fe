@@ -6,7 +6,7 @@
             </div>
             <div class="card-content">
                 <h3 class="card-name">
-                    <nuxt-link :to="linkDetail" class="title">Borrow Dinner</nuxt-link>
+                    <nuxt-link :to="linkDetail" class="title">{{title}}</nuxt-link>
                 </h3>
                 <div class="card-features ">
                     <ul class="listnone">
