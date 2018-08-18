@@ -19,7 +19,7 @@
                             <div class="col-xl-8 col-lg-8 col-md-3 col-sm-12 col-12">
                                 <div class="row">
                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <div class="btn-action"> <a href="#" class="btn btn-default">How To Apply</a> </div>
+                                        <div class="btn-action"> <a href="loan-product-detail" class="btn btn-default">How To Apply</a> </div>
                                     </div>
                                 </div>
                             </div>
@@ -28,10 +28,10 @@
                     <div id="sub-nav-sticky-wrapper" class="sticky-wrapper" style="height: 58px;"><div class="sub-nav" id="sub-nav" style="width: 998px;"><div id="menu-button">subnav</div>
                          <ul class="nav nav-justified">
                             <li class="nav-item">
-                                <a href="" class="nav-link">ผลิตภัณฑ์ทางการเงิน</a>
+                                <a href="loan-product" class="nav-link">ผลิตภัณฑ์ทางการเงิน</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">อธิบายผลิตภัณฑ์ทางการเงิน</a>
+                                <a href="loan-product-detail" class="nav-link">อธิบายผลิตภัณฑ์ทางการเงิน</a>
                             </li>
                         </ul>
                     </div></div>
