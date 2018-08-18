@@ -25,16 +25,6 @@
                             </div>
                         </div>
                     </div>
-                    <div id="sub-nav-sticky-wrapper" class="sticky-wrapper" style="height: 58px;"><div class="sub-nav" id="sub-nav" style="width: 998px;"><div id="menu-button">subnav</div>
-                         <ul class="nav nav-justified">
-                            <li class="nav-item">
-                                <a href="loan-product" class="nav-link">ผลิตภัณฑ์ทางการเงิน</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="loan-product-detail" class="nav-link">อธิบายผลิตภัณฑ์ทางการเงิน</a>
-                            </li>
-                        </ul>
-                    </div></div>
                 </div>
             </div>
         </div>
