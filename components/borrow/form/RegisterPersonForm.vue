@@ -5,7 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script>
-    < script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
     integrity = "sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
     crossorigin = "anonymous" >
     </script>
@@ -121,7 +121,7 @@
           </div>
 
         </div>
-        <h3 style="margin-top: 20px">รายระเอียดขายฝาก</h3><br>
+        <h3 style="margin-top: 20px">รายละเอียดขายฝาก</h3><br>
         <div class="container">
           <div class="row">
             <div class="col">
@@ -145,7 +145,7 @@
               <input type="text" class="form-control" id="input" placeholder="เดือน">
             </div>
           </div>
-          <label>รายระเอียดทรัพย์สินที่ต้องการขายฝาก</label>
+          <label>รายละเอียดทรัพย์สินที่ต้องการขายฝาก</label>
           <div class="row">
             <div class="col">
               <label>เลขที่โฉนด</label>
@@ -193,7 +193,7 @@
               <input type="radio" name="statusCompany" value="on" id="inputMarried">มีการดำเนินการเป็น :<input type="text" name="operate" id="inputOperate">
             </div>
             <div class="col-md-3">
-              <label>สนใจผุ้รับฝากซื้อหาผู้เช่า</label><br>
+              <label>สนใจผู้รับฝากซื้อหาผู้เช่า</label><br>
               <input type="radio" name="status_assept" value="true" id="inputYes">Yes
               <div style=" margin-right: 1px"></div>
               <input type="radio" name="status_assept" value="false" id="inputNo">No
@@ -210,7 +210,7 @@
           </div>
           <div style="display: flex; justify-content: center; align-items: center;">
             <div class="col" style="max-width:500px">
-              <p>ข้อตกลง : ข้าพเจ้าขอรับรองว่าข้อูลตามรายละเอียดข้างต้นเป็นความจริงทุกประการ โดยข้าพเจ้ายินยอมให้บริษัทฯ ติดต่อ สอบถาม และ/หรือตรวจสอบข้อมูลรายละเอียดต่างๆของขาพเจ้า และ/หรือ บุคคลที่เกี่ยวข้องได้จากบุคคล และ/หรือ นิติบุคคลอื่นทั้งหมด และไม่ว่าด้วยวิธีใดๆ ตลอดจนยินยอมให้บริษัทฯ เปิดเผยข้อมูลดังกล่าวแก่บุคคล และ/หรือ นิติบุคคลใดได้ตามที่บริษัทฯ เห็นสมควร ทั้งนี้ ข้าพเข้าจะไม่เรียกร้องค่าตอบแทน และ/หรือ ค่าเสียหายใดๆที่เกิดขึ้นเนื่องจากการกระทำดังกล่าวของบริษัทฯทั้งสิ้น นอกจากนี้ในการที่ข้าพเจ้าขอสินเชื่อประเภทต่างๆ จากบริษัทนั้น ข้าพเจ้ายินยอมปฏิบัติตามระเเบียบ ข้อกำหนดและเงื่อนไขของบริษัทฯและเงื่อนไขของบริษัทฯ ทุกประการและยินยอมเสียค่า ธรรมเนียม ตามระเบียบ ข้อกำหนดและเงื่อนไขของบริษัทฯ โดยข้าพเจ้าตกลงเป็นผู้ชำระเองทั้งสิ้น </p>
+              <p>ข้อตกลง : ข้าพเจ้าขอรับรองว่าข้อมูลตามรายละเอียดข้างต้นเป็นความจริงทุกประการ โดยข้าพเจ้ายินยอมให้บริษัทฯ ติดต่อ สอบถาม และ/หรือตรวจสอบข้อมูลรายละเอียดต่างๆของขาพเจ้า และ/หรือ บุคคลที่เกี่ยวข้องได้จากบุคคล และ/หรือ นิติบุคคลอื่นทั้งหมด และไม่ว่าด้วยวิธีใดๆ ตลอดจนยินยอมให้บริษัทฯ เปิดเผยข้อมูลดังกล่าวแก่บุคคล และ/หรือ นิติบุคคลใดได้ตามที่บริษัทฯ เห็นสมควร ทั้งนี้ ข้าพเข้าจะไม่เรียกร้องค่าตอบแทน และ/หรือ ค่าเสียหายใดๆที่เกิดขึ้นเนื่องจากการกระทำดังกล่าวของบริษัทฯทั้งสิ้น นอกจากนี้ในการที่ข้าพเจ้าขอสินเชื่อประเภทต่างๆ จากบริษัทนั้น ข้าพเจ้ายินยอมปฏิบัติตามระเเบียบ ข้อกำหนดและเงื่อนไขของบริษัทฯและเงื่อนไขของบริษัทฯ ทุกประการและยินยอมเสียค่า ธรรมเนียม ตามระเบียบ ข้อกำหนดและเงื่อนไขของบริษัทฯ โดยข้าพเจ้าตกลงเป็นผู้ชำระเองทั้งสิ้น </p>
               <label>ยืนยัน</label><br>
               <input type="checkbox" name="confirm" value="ture" id="input">ตกลง<br>
               <label>ต้องการรับข้อมูลข่าวสารรวมถึงโปรโมชั่นต่างๆของบริษัทฯ หรือไม่</label><br>
