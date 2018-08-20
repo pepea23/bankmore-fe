@@ -2,11 +2,17 @@
   <div class="container">
     <div class="row">
       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <how-to-entry></how-to-entry>
         <div class="wrapper-content">
           <div class="row">
-            <how-to-entry></how-to-entry>
-            <sell-form-register-corporate></sell-form-register-corporate>
-            <sell-form-register-person></sell-form-register-person>
+            <button class="btn btn-default" v-on:click="isClickButton = true">บุคคลธรรมดา</button>
+            <button class="btn btn-default" v-on:click="isClickButton = false">นิติบุคคล</button>
+            <div v-show="isClickButton">
+              <sell-form-register-person></sell-form-register-person>
+            </div>
+            <div v-show="!isClickButton">
+              <sell-form-register-corporate></sell-form-register-corporate>
+            </div>
           </div>
         </div>
       </div>
@@ -24,7 +30,7 @@ export default {
   title: 'borrow',
 
   data() {
-    return {}
+    return { isClickButton: true }
   },
   components: {
     HowToEntry,
