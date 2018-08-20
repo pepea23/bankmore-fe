@@ -95,7 +95,7 @@
           </div>
 
         </div>
-        <h3 style="margin-top: 20px">รายระเอียดขายฝาก</h3><br>
+        <h3 style="margin-top: 20px">รายละเอียดขายฝาก</h3><br>
         <div class="container">
           <div class="row">
             <div class="col">
@@ -119,7 +119,7 @@
               <input type="text" class="form-control" id="input" placeholder="เดือน">
             </div>
           </div>
-          <label>รายระเอียดทรัพย์สินที่ต้องการขายฝาก</label>
+          <label>รายละเอียดทรัพย์สินที่ต้องการขายฝาก</label>
           <div class="row">
             <div class="col">
               <label>เลขที่โฉนด</label>
