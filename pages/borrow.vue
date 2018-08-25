@@ -5,12 +5,12 @@
             <how-to-entry></how-to-entry>
         <div class="wrapper-content">
           <div class="row">
-            <button class="btn btn-default" v-on:click="isClickButton = true">บุคคลธรรมดา</button>
-            <button class="btn btn-default" v-on:click="isClickButton = false">นิติบุคคล</button>
-            <div v-show="isClickButton">
+            <button class="btn btn-default" @click="showPersonform()">บุคคลธรรมดา</button>
+            <button class="btn btn-default" @click="showCorporateform()">นิติบุคคล</button>
+            <div v-show="isPersonClick">
               <sell-form-register-person></sell-form-register-person>
             </div>
-            <div v-show="!isClickButton">
+            <div v-show="isCorporateClick">
               <sell-form-register-corporate></sell-form-register-corporate>
             </div>
           </div>
@@ -28,14 +28,26 @@ const SellFormRegisterCorporate = () =>
   import('@/components/borrow/form/RegisterCorporateForm')
 export default {
   title: 'borrow',
-
-  data() {
-    return { isClickButton: true }
-  },
   components: {
     HowToEntry,
     SellFormRegisterPerson,
     SellFormRegisterCorporate,
+  },
+  data() {
+    return {
+      isPersonClick: false,
+      isCorporateClick: false,
+    }
+  },
+  methods: {
+    showPersonform() {
+      this.isPersonClick = true
+      this.isCorporateClick = false
+    },
+    showCorporateform() {
+      this.isPersonClick = false
+      this.isCorporateClick = true
+    },
   },
 }
 </script>
