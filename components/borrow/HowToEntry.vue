@@ -15,8 +15,17 @@
               </div>
             </div>
             <hr>
-            <p>โปรดตรวจสอบการกรอกข้อมูลและอ่านสัญญาข้อตกลงให้ครบถ้วนถูกต้อง</p>
-            <a href="#" class="btn btn-default">Apply for loan</a>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <center>
+                          <p>โปรดตรวจสอบการกรอกข้อมูลและอ่านสัญญาข้อตกลงให้ครบถ้วนถูกต้อง</p>
+                          <nuxt-link :to="'#'" class="btn btn-default">Apply for loan</nuxt-link>
+                        </center>
+                    </div>
+                </div>
+            </div>
           </div>
         </div>
       </div>
