@@ -6,7 +6,7 @@
                     <div class="col-md-6 col-12">
                         <div class="col-md-9 card card-body pinside30">
                             <form>
-                                <h3 style="color:black;">ยินดีต้อนรับเข้าสู่ระบบ <nuxt-link :to="'#'" class="btn btn-primary btn-sm" >singup</nuxt-link></h3>
+                                <h3 style="color:black;">ยินดีต้อนรับเข้าสู่ระบบ <nuxt-link :to="'invester-singup'" class="btn btn-primary btn-sm" >singup</nuxt-link></h3>
                                 <div style="padding-top: 10px;">
                                     <input type="text" placeholder="username" name="username" value="" class="form-control">
                                 </div>
