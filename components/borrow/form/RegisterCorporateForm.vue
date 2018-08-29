@@ -185,7 +185,7 @@
                 <div class="row">
                     <div class="col-12 col-md-12">
                         <center>
-                            <input type="submit" class="btn btn-primary" value="Submit" from="RegisFromPerson" onclisk="doSubmit(this)">
+                            <input type="submit" class="btn btn-primary" value="Apply for loan" from="RegisFromPerson" onclisk="doSubmit(this)">
                         </center>
                     </div>
                 </div>
