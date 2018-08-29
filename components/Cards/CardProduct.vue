@@ -1,31 +1,37 @@
 <template>
-  <div class="container-fulid paddingAll">
-    <div class="row ">
-    <div class="col-12">
     <div class="row">
-      <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
-        <CardProduct/>
-      </div>
-      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-        <CardSearch/>
-      </div>
-      </div>
-      </div>
-    </div>
-  </div>
+      <div v-for="product in product" :key="product">
+        <div class="col-xl-4 col-md-4 col-6">
+              <div class="card">
+                <div class="card-img">
+                  <img :src="product.image" :alt="title" />
+                </div>
+                <div class="card-content">
+                  <h3 class="card-name">
+                    {{product.title}}
+                  </h3>
+                  <div class="card-features ">
+                    <ul class="listnone">
+                      <li>{{product.description}}</li>
+                    </ul>
+                  </div>
+                  <div class="text-danger fontCountdown d-flex justify-content-center">
+                  <Countdown deadline="August 22, 2022"></Countdown>
+									</div>
+                </div>
+              </div>
+          </div>
+        </div>
+			</div>
 </template>
 
 <script>
   import Countdown from 'vuejs-countdown'
-  const CardSearch = () => import('@/components/Cards/CardSearch')
-  const CardProduct = () =>import('@/components/Cards/CardProduct')
 
   export default {
     title: 'property-project',
     components: {
-      CardSearch,
-      Countdown,
-      CardProduct
+      Countdown
     },
     data() {
       return {
@@ -94,4 +100,7 @@
   .fontCountdown {
     font-size:5%;
   }
+	.card{
+		width:350px;;
+	}
 </style>

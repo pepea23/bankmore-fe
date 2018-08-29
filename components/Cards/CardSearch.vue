@@ -1,7 +1,7 @@
 <template>
-	<div class="card" style="widows: 450px">
+	<div class="card">
 		<div class="card-body">
-			<form class="form-inline my-2 my-lg-0">
+			<form class="form-inline">
 				<div class="content container">
 					<div class="search md">
 						<input class="form-control" id="myInput" type="text" placeholder="Search..">
@@ -18,4 +18,8 @@
 	.btn {
 		width: 10vw;
 	}
+  .form-control{
+    min-width:250px;
+  }
+  
 </style>

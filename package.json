@@ -23,7 +23,8 @@
     "purgecss-webpack-plugin": "^1.2.0",
     "vue-breakpoint-component": "^1.0.3",
     "vue-mq": "^0.2.1",
-    "vue-sticky": "^3.3.4"
+    "vue-sticky": "^3.3.4",
+    "vuejs-countdown": "^0.2.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
