@@ -1,25 +1,19 @@
 <template>
-  <div class="container">
-     <DashBoard/>
-      </div>
+    <div>
+        <banner></banner>
+        <privilege></privilege>
+    </div>
 </template>
-
 <script>
-const DashBoard = () => import('@/components/invester/DashBoard')
+const Banner = () => import('@/components/invester/notlogin/Banner')
+const Privilege = () => import('@/components/invester/notlogin/Privilege')
 
 export default {
   title: 'invester',
   components: {
-   DashBoard
+    Banner,
+    Privilege,
   },
-  data() {
-    return {
-      
-    }
-  },
-  methods: {
-  
-}
 }
 </script>
 

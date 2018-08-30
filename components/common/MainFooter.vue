@@ -56,30 +56,6 @@
             </div>
           </div>
           <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
-            <div class="widget-footer mt40">
-              <ul class="listnone">
-                <li>
-                  <a href="#">Car Loan</a>
-                </li>
-                <li>
-                  <a href="#">Personal Loan</a>
-                </li>
-                <li>
-                  <a href="#">Education Loan</a>
-                </li>
-                <li>
-                  <a href="#">Business Loan</a>
-                </li>
-                <li>
-                  <a href="#">Home Loan</a>
-                </li>
-                <li>
-                  <a href="#">Debt Consolidation</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
             <div class="widget-social mt40">
               <ul class="listnone">
                 <li>

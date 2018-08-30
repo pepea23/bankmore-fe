@@ -69,10 +69,10 @@ module.exports = {
   plugins: [
     { src: '@/plugins/vue-sticky', ssr: false },
     { src: '@/plugins/vue-mq', ssr: false },
-    { src: "@/plugins/chart", ssr: false }
-
+    { src: '@/plugins/vue-slider', ssr: false },
   ],
   /*
+    { src: "@/plugins/chart", ssr: false }
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },

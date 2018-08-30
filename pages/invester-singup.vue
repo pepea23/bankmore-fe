@@ -1,39 +1,35 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-            <how-to-entry></how-to-entry>
-        <div class="wrapper-content">
-          <div class="d-flex justify-content-center mb-2">
+    <div>
+        <div class="wrapper-content bg-white mt-1 p-1">
+          <div class="col-12 col-md-12">
+            <h1>ข้อมูลผู้สนใจลงทุน</h1>
+            <div class="d-flex justify-content-center">
               <button class="btn btn-default" @click="showPersonform()">บุคคลธรรมดา</button>
             <button class="btn btn-default" @click="showCorporateform()">นิติบุคคล</button>
           </div>
-            <div class="row">
+          <div class="row">
               <div v-show="isPersonClick" class="col-12 col-md-12">
-                <sell-form-register-person></sell-form-register-person>
+                <form-person></form-person>
               </div>
               <div v-show="isCorporateClick" class="col-12 col-md-12">
-                <sell-form-register-corporate></sell-form-register-corporate>
+                <form-corporate></form-corporate>
               </div>
             </div>
+          </div>
         </div>
-      </div>
     </div>
-  </div>
 </template>
-
 <script>
-const HowToEntry = () => import('@/components/borrow/HowToEntry')
-const SellFormRegisterPerson = () =>
-  import('@/components/borrow/form/RegisterPersonForm')
-const SellFormRegisterCorporate = () =>
-  import('@/components/borrow/form/RegisterCorporateForm')
+const FormPerson = () =>
+  import('@/components/invester/notlogin/singup/FormPerson')
+const FormCorporate = () =>
+  import('@/components/invester/notlogin/singup/FormCorporate')
+
 export default {
-  title: 'borrow',
+  title: 'invester-singup',
   components: {
-    HowToEntry,
-    SellFormRegisterPerson,
-    SellFormRegisterCorporate,
+    FormPerson,
+    FormCorporate,
   },
   data() {
     return {
