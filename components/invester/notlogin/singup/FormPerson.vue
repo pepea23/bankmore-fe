@@ -106,11 +106,11 @@
               </div>
               <label>จำนวนเงินยอดรับซื้อฝาก</label>
               <div class="row">
-                <div class="col-12 col-md-12">
-                  <br>
-                  <vue-slider v-model="inputSlider" min="1000000" max="100000000" interval="100" speed="0.2"></vue-slider>
+                <div class="col-12 col-md-5">
+                  <input type="number" class="form-control">
+                  <!-- <vue-slider v-model="inputSlider" min="1000000" max="100000000" interval="100" speed="0.2"></vue-slider> -->
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-7">
                   <input type="number" placeholder="ถ้าจำนวนเงินมากกว่าหนึ่งร้อยล้านบาท" min="100000000" class="form-control">
                 </div>
               </div>
