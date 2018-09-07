@@ -29,9 +29,28 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-12 col-md-12"><h1>title : {{title}}</h1></div>
+    <table class="table table-striped table-dark">
+          <thead>
+            <tr>
+              <th>ราคาขาย</th>
+              <th>ราคาเช่า</th>
+            </tr>
+            <tr>
+              <th>{{sale}} บาท</th>
+              <th>{{rent}} บาท</th>
+            </tr>
+          </thead>
+        </table>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-12">
+
+      </div>
+    <div class="col-12 col-md-7"><h1>title : {{title}}</h1></div>
     <div class="col-12 col-md-12"><p>detail : {{detail}}</p></div>
-    
+    <div class="col-12 col-md-5">
+      
+    </div>
     
   </div>
 </div>
