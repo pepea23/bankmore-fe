@@ -2,11 +2,11 @@
 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
   <div class="card-listing">
     <div class="card-img">
-      <nuxt-link :to="'property-for-sale-rent/'+id"><img :src="image" :alt="title"></nuxt-link>
+      <nuxt-link :to="'property-for-sale-rent/'+id"><center><img :src="image" :alt="title"></center></nuxt-link>
     </div>
     <div class="card-content">
       <h3 class="card-name">
-        <nuxt-link :to="'property-for-sale-rent/'+id" class="title">{{title}}</nuxt-link>
+        <nuxt-link :to="'property-for-sale-rent/'+id" class="title"><center>{{title}}</center></nuxt-link>
       </h3>
       <div class="card-features ">
         <ul class="listnone">
