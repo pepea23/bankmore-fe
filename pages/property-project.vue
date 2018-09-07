@@ -1,13 +1,13 @@
 <template>
-  <div class="container-fulid paddingAll">
+  <div class="container">
     <div class="row ">
     <div class="col-12">
     <div class="row">
-      <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
-        <CardProduct/>
-      </div>
       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
         <CardSearch/>
+      </div>
+      <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+        <CardProduct/>
       </div>
       </div>
       </div>
@@ -85,13 +85,3 @@
   }
 
 </script>
-
-<style>
-  .paddingAll {
-    padding: 5%;
-  }
-
-  .fontCountdown {
-    font-size:5%;
-  }
-</style>
