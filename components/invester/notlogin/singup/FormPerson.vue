@@ -41,7 +41,7 @@
                   <input type="number" name="age" min="1" class="form-control">
                 </div>
                 <div class="col-12 col-md-2">
-                  <label>สถานการณ์สมรส</label>
+                  <label>สถานภาพสมรส</label>
                   <div class="container">
                     <input type="radio" name="status" value="single" id="inputSingle">โสด
                         <div style="margin-right: 1px;"></div>
