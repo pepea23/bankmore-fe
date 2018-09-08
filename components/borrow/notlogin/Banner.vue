@@ -6,7 +6,7 @@
                     <div class="col-md-6 col-12">
                         <div class="col-md-9 card card-body pinside30">
                             <form>
-                                <h3 style="color:black;">ยินดีต้อนรับเข้าสู่ระบบ <nuxt-link :to="'invester-register'" class="btn btn-primary btn-sm" >singup</nuxt-link></h3>
+                                <h3 style="color:black;">ยินดีต้อนรับเข้าสู่ระบบ <nuxt-link :to="'/borrow/register'" class="btn btn-primary btn-sm" >singup</nuxt-link></h3>
                                 <div style="padding-top: 10px;">
                                     <input type="text" placeholder="username" name="username" value="" class="form-control">
                                 </div>
@@ -24,7 +24,7 @@
                     </div>
                     <div class="col-md-6 col-12 ">
                         <div class="text-center">
-                            <h1 class="text-white">Invester - Page</h1>
+                            <h1 class="text-white">Borrow - Page</h1>
                             <p class="lead text-white">detail description.</p>
                         </div>
                     </div>

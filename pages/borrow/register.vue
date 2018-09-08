@@ -25,11 +25,11 @@
 <script>
 const HowToEntry = () => import('@/components/borrow/HowToEntry')
 const SellFormRegisterPerson = () =>
-  import('@/components/borrow/form/RegisterPersonForm')
+  import('@/components/borrow/notlogin/form/RegisterPersonForm')
 const SellFormRegisterCorporate = () =>
-  import('@/components/borrow/form/RegisterCorporateForm')
+  import('@/components/borrow/notlogin/form/RegisterCorporateForm')
 export default {
-  title: 'borrow',
+  title: 'borrow-register',
   components: {
     HowToEntry,
     SellFormRegisterPerson,

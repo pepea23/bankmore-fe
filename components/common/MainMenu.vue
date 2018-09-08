@@ -4,7 +4,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
           <div class="logo">
-            <nuxt-link to="/" exact><img src="images/logo.png" alt="Bankmore+" id="logo-bankmore">
+            <nuxt-link to="/" exact><img src="@/static/images/logo.png" alt="Bankmore+" id="logo-bankmore">
               <b>Bankmore+</b>
             </nuxt-link>
           </div>
@@ -17,22 +17,22 @@
             <nuxt-link tag="li" class="nav-item" to="/" exact>
               <a class="nav-link">Home</a>
             </nuxt-link>
-            <nuxt-link tag="li" class="nav-item" to="loan-product">
+            <nuxt-link tag="li" class="nav-item" to="/loan-product">
               <a class="nav-link">Loan Product</a>
             </nuxt-link>
-            <nuxt-link tag="li" class="nav-item" to="borrow">
+            <nuxt-link tag="li" class="nav-item" to="/borrow">
               <a class="nav-link">Borrow</a>
             </nuxt-link>
-            <nuxt-link tag="li" class="nav-item" to="invester">
+            <nuxt-link tag="li" class="nav-item" to="/invester">
               <a class="nav-link">Invester</a>
             </nuxt-link>
-            <nuxt-link tag="li" class="nav-item" to="property-project">
+            <nuxt-link tag="li" class="nav-item" to="/property-project">
               <a class="nav-link">Property / Project</a>
             </nuxt-link>
-            <nuxt-link tag="li" class="nav-item" to="property-for-sale-rent">
+            <nuxt-link tag="li" class="nav-item" to="/property-for-sale-rent">
               <a class="nav-link">Property for Sale & Rent</a>
             </nuxt-link>
-            <nuxt-link tag="li" class="nav-item" to="articles">
+            <nuxt-link tag="li" class="nav-item" to="/articles">
               <a class="nav-link">Articles</a>
             </nuxt-link>
           </ul>
