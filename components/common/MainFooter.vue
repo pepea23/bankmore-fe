@@ -7,7 +7,7 @@
             <div class="widget-text mt40">
               <div class="footer-logo">
                 <nuxt-link to="/" exact>
-                  <img src="images/logo.png" alt="Bankmore+" id="logo-bankmore">
+                  <img src="@/static/images/logo.png" alt="Bankmore+" id="logo-bankmore">
                   <b>Bankmore+</b>
                 </nuxt-link>
               </div>

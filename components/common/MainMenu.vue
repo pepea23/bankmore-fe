@@ -4,7 +4,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
           <div class="logo">
-            <nuxt-link to="/" exact><img src="images/logo.png" alt="Bankmore+" id="logo-bankmore">
+            <nuxt-link to="/" exact><img src="@/static/images/logo.png" alt="Bankmore+" id="logo-bankmore">
               <b>Bankmore+</b>
             </nuxt-link>
           </div>
