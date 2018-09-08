@@ -34,22 +34,22 @@
                 <nuxt-link tag="li" to="/" exact>
                   <a>Home</a>
                 </nuxt-link>
-                <nuxt-link tag="li" to="loan-product">
+                <nuxt-link tag="li" to="/loan-product">
                   <a>Loan Product</a>
                 </nuxt-link>
-                <nuxt-link tag="li" to="borrow">
+                <nuxt-link tag="li" to="/borrow">
                   <a>Borrow</a>
                 </nuxt-link>
-                <nuxt-link tag="li" to="invester">
+                <nuxt-link tag="li" to="/invester">
                   <a>Invester</a>
                 </nuxt-link>
-                <nuxt-link tag="li" to="property-project">
+                <nuxt-link tag="li" to="/property-project">
                   <a>Property / Project</a>
                 </nuxt-link>
-                <nuxt-link tag="li" to="property-for-sale-rent">
+                <nuxt-link tag="li" to="/property-for-sale-rent">
                   <a>Property for Sale & Rent</a>
                 </nuxt-link>
-                <nuxt-link tag="li" to="articles">
+                <nuxt-link tag="li" to="/articles">
                   <a>Articles</a>
                 </nuxt-link>
               </ul>
