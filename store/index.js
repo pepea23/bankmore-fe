@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 const createStore = () => {
     return new Vuex.Store({
         state: {
-            data: 0
+            name: 'Guest'
         },
         mutations: {
 
@@ -12,9 +12,8 @@ const createStore = () => {
 
         },
         getters: {
-            getDatatest: function (state) {
-                console.log("HIT SEARCH!")
-                return state.data
+            getName: function (state) {
+                return state.name
             }
         }
 

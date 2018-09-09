@@ -79,8 +79,6 @@ export default {
   methods: {
     ...mapMutations({})
   },
-  computed: {
-    ...mapGetters(["getDatatest"])
-  }
+ 
 };
 </script>
