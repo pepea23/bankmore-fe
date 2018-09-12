@@ -9,6 +9,14 @@ const config = require('./nuxt.config.js')
 config.dev = !isProd
 const nuxt = new Nuxt(config)
 
+// Proxy API
+const proxy = require('http-proxy-middleware')
+
+app.use(
+  '/api',
+  proxy({ target: 'http://206.189.144.210:3333', changeOrigin: true }),
+)
+
 // Render every route with Nuxt.js
 app.use(nuxt.render)
 
