@@ -85,7 +85,7 @@ export default {
     async hnadleOnClickSeach() {
       let test = "test";
      
-      await this.$axious.$post("http://206.189.144.210:3333/test",test );
+      await this.$axious.$post("http://206.189.144.210:3333/api/test",test );
     }
   }
 };
