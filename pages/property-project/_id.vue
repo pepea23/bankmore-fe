@@ -32,12 +32,15 @@
     <table class="table table-striped table-dark">
           <thead>
             <tr>
-              <th>ราคาขาย</th>
-              <th>ราคาเช่า</th>
+              <th>เวลาคงเหลือ</th>
             </tr>
             <tr>
-              <!-- <th>{{getProperty.expected_interest}} บาท</th> -->
-              <!-- <th>{{getProperty.expected_borrow_time}} บาท</th> -->
+              <div class="text-danger fontCountdown d-flex justify-content-center">
+              <!-- <Countdown deadline="August 22, 2022"></Countdown> -->
+              <Countdown end="14-Sep-2018 23:00:00"></Countdown>
+            </div>
+              <!-- <th>{{getProperty.expected_interest}} บาท</th>
+              <th>{{getProperty.expected_borrow_time}} บาท</th> -->
             </tr>
           </thead>
         </table>
@@ -58,12 +61,11 @@
 
 <script>
 {
-  title: 1
   img: 1 - 6
-  sale: 1
-  rent: 1
-  detail: 1
+  biding_end_time: 1
 }
+
+import Countdown from 'vuejs-countdown'
 import { mapActions, mapGetters } from 'vuex'
 
 export default {
@@ -74,16 +76,16 @@ export default {
     }
   },
   mounted() {
-    this.fetchProperty(this.id)
+    this.fetchPropertysById(this.id)
   },
   methods: {
     ...mapActions({
-      fetchProperty: 'propertySaleRent/fetchPropertysById',
+      fetchPropertysById: 'propertyProject/fetchPropertysById',
     }),
   },
   computed: {
     ...mapGetters({
-      getProperty: 'propertySaleRent/getProperty',
+      getProperty: 'propertyProject/getProperty',
     }),
   },
 }
