@@ -7,21 +7,70 @@
     <div class="col-md-8 col-12">
       <product-list :items="items"></product-list>
     </div>
-
+    
+    <!-- <button @click="fetchPropertys()">fetch</button> -->
   </div>
 </div>
 </template>
 
 <script>
+;[
+  {
+    title: 1,
+    sale: 1,
+    rent: 1,
+  },
+  {
+    title: 2,
+    sale: 2,
+    rent: 2,
+  },
+  {
+    title: 3,
+    sale: 3,
+    rent: 3,
+  },
+  {
+    title: 4,
+    sale: 4,
+    rent: 4,
+  },
+  {
+    title: 5,
+    sale: 5,
+    rent: 5,
+  },
+  {
+    title: 6,
+    sale: 6,
+    rent: 6,
+  },
+  {
+    title: 7,
+    sale: 7,
+    rent: 7,
+  },
+  {
+    title: 8,
+    sale: 8,
+    rent: 8,
+  },
+]
 const advanceSearch = () =>
   import('@/components/property-for-sale-rent/advanceSearch')
 const ProductList = () =>
   import('@/components/property-for-sale-rent/ProductList')
+
+import { mapActions, mapGetters } from 'vuex'
+
 export default {
   title: 'propertyForSaleRent',
   components: {
     advanceSearch,
     ProductList,
+  },
+  mounted() {
+    this.fetchPropertyList()
   },
   data() {
     return {
@@ -91,6 +140,16 @@ export default {
         },
       ],
     }
+  },
+  computed: {
+    ...mapGetters({
+      getPropertyList: 'property/getPropertyList',
+    }),
+  },
+  methods: {
+    ...mapActions({
+      fetchPropertyList: 'property/fetchPropertyList',
+    }),
   },
 }
 </script>
