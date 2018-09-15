@@ -9,56 +9,56 @@
       <label>ชื่อ</label>
       <div class="row">
         <div class="col-6 col-md-6">
-          <input type="text" class="form-control" name="firstName" placeholder="ชื่อ">
+          <input type="text" class="form-control" v-model="registerdata.firstName" placeholder="ชื่อ">
         </div>
         <div class="col-6 col-md-6">
-          <input type="text" class="form-control" name="lastName" placeholder="นามสกุล">
+          <input type="text" class="form-control" v-model="registerdata.lastName" placeholder="นามสกุล">
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-12">
           <label>ที่อยู่</label>
-          <input type="text" class="form-control" name="address">
+          <input type="text" class="form-control" v-model="registerdata.address">
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-3">
           <label>เบอร์ติดต่อ</label>
-          <input type="tel" name="phonenumber" class="form-control">
+          <input type="tel" v-model="registerdata.phonenumber" class="form-control">
         </div>
         <div class="col-12 col-md-3">
           <label>อีเมล์</label>
-          <input type="email" name="email" class="form-control">
+          <input type="email" v-model="registerdata.email" class="form-control">
         </div>
         <div class="col-12 col-md-3">
           <label>บุคคลอ้างอิง</label>
-          <input type="text" name="reference" class="form-control">
+          <input type="text" v-model="registerdata.reference" class="form-control">
         </div>
         <div class="col-12 col-md-3">
           <label>วันเกิด</label>
-          <input type="date" name="birthday" class="form-control">
+          <input type="date" v-model="registerdata.birthday" class="form-control">
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-2">
           <label>อายุ</label>
-          <input type="number" name="age" min="1" class="form-control">
+          <input type="number" v-model="registerdata.age" min="1" class="form-control">
         </div>
         <div class="col-12 col-md-2">
           <label>สถานภาพสมรส</label>
           <div class="container">
-            <input type="radio" name="status" value="single">โสด
+            <input type="radio" v-model="registerdata.status" value="single">โสด
             <div style=" margin-right: 1px"></div>
-            <input type="radio" name="status" value="married">แต่งงาน
+            <input type="radio" v-model="registerdata.status" value="married">แต่งงาน
           </div>
         </div>
         <div class="col-12 col-md-2">
           <label>จำนวนบุตร</label>
-          <input type="number" class="form-control" name="numChild" min="0">
+          <input type="number" class="form-control" v-model="registerdata.numChild" min="0">
         </div>
         <div class="col-12 col-md-6">
           <label>การศึกษา</label>
-          <input type="text" class="form-control" name="education">
+          <input type="text" class="form-control" v-model="registerdata.education">
         </div>
       </div>
     </div>
@@ -68,16 +68,16 @@
       <div class="row">
         <div class="col-12 col-md-3">
           <label>อาชีพ</label>
-          <input type="text" class="form-control" name="job">
+          <input type="text" class="form-control" v-model="registerdata.job">
         </div>
         <div class="col-12 col-md-5">
           <label>ชื่อสถานประกอบการ</label>
-          <input type="text" class="form-control" name="companyName">
+          <input type="text" class="form-control" v-model="registerdata.companyName">
         </div>
         <div class="col-12 col-md-4">
           <div class="form-group ">
             <label>ประเภทธุรกิจ</label>
-            <select id="inputCompanyType" class="form-control">
+            <select v-model="registerdata.inputCompanyType" class="form-control">
                 <option selected>Choose...</option>
                 <option>...</option>
             </select>
@@ -87,26 +87,26 @@
       <div class="row">
         <div class="col-12 col-md-3">
           <label>จำนวนที่ทำงาน</label>
-          <input type="number" class="form-control" name="yearOfWork" min="0">
+          <input type="number" class="form-control" v-model="registerdata.yearOfWork" min="0">
         </div>
         <div class="col-12 col-md-3">
           <label>ตำแหน่ง</label>
-          <input type="text" class="form-control" name="position">
+          <input type="text" class="form-control" v-model="registerdata.position">
         </div>
         <div class="col-12 col-md-3">
           <label>เงินเดือน</label>
-          <input type="number" class="form-control" name="salary" min="0">
+          <input type="number" class="form-control" v-model="registerdata.salary" min="0">
         </div>
         <div class="col-12 col-md-3">
           <label>รายได้อื่น ๆ</label>
-          <input type="text" class="form-control" name="otherIncome">
+          <input type="text" class="form-control" v-model="registerdata.otherIncome">
         </div>
       </div>
       <div class="row">
         <div class="col">
           <div class="form-group">
             <label>วัตถุประสงค์ในการฝากขาย</label>
-            <textarea class="form-control" id="businessObjectives" rows="5"></textarea>
+            <textarea class="form-control" v-model="registerdata.businessObjectives" rows="5"></textarea>
           </div>
         </div>
       </div>
@@ -120,7 +120,7 @@
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <div class="input-group-text">
-                <input type="checkbox" required>
+                <input type="checkbox"  v-model="registerdata.checkConditon"  required value="checked">
               </div>
             </div>
             <p class="form-control">ยืนยัน</p>
@@ -128,7 +128,7 @@
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <div class="input-group-text">
-                <input type="checkbox" name="follow">
+                <input type="checkbox" v-model="registerdata.checkGetemail" value="checked">
               </div>
             </div>
             <p class="form-control">ต้องการรับข้อมูลข่าวสารรวมถึงโปรโมชั่นต่างๆของบริษัทฯ</p>
@@ -140,7 +140,7 @@
       <div class="row">
         <div class="col-12 col-md-12">
           <center>
-            <input type="submit" class="btn btn-primary" value="Apply for loan" from="RegisFromPerson" onclisk="doSubmit(this)">
+            <input type="submit" class="btn btn-primary"  value="Apply for loan"  @click="this.sumbmitRegister">
           </center>
         </div>
       </div>
@@ -151,12 +151,50 @@
 
 <script>
 function doSubmit(form) {
-  alert('Thank you')
+  alert("Thank you");
 
-  this.$router.push('@/pages/index.vue')
+  this.$router.push("@/pages/index.vue");
 }
 
 export default {
-  name: 'Register-Person-Form',
-}
+  name: "Register-Person-Form",
+  data() {
+    return {
+      registerdata: {
+        firstName: "",
+        lastName: "",
+        address: "",
+        phonenumber: "",
+        email: "",
+        reference: "",
+        birthday: "",
+        age: "",
+        status: "",
+        numChild: "",
+        education: "",
+        job: "",
+        companyName: "",
+        inputCompanyType: "",
+        yearOfWork: "",
+        position: "",
+        salary: "",
+        otherIncome: "",
+        businessObjectives: "",
+        checkConditon: "",
+        checkGetEmail: ""
+      }
+    };
+  },
+  methods: {
+    async sumbmitRegister() {
+      try {
+        console.log(this.registerdata);
+        // const loginSend = await this.$axios.$post(`/api/login/${loginData}`);
+        // commit("loginSend", loginSend);
+      } catch (error) {
+        console.log("send Fail" + error);
+      }
+    }
+  }
+};
 </script>
