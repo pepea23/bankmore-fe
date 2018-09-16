@@ -1,5 +1,5 @@
 <template>
-  <div id="banner" class="carousel slide" data-ride="carousel">
+  <div id="banner" class="carousel slide" data-ride="carousel" style="margin-top:40px;">
     <ul class="carousel-indicators">
       <li data-target="#banner" data-slide-to="0" class="active"></li>
       <li data-target="#banner" data-slide-to="1"></li>

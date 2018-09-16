@@ -13,14 +13,32 @@
         </div>
       </div>
     </div>
-    <apply-loan></apply-loan>
-    <choose-us></choose-us>
-    <user-review></user-review>
   </div>
 
 </template>
 
 <script>
+;[
+  {
+    title: 1,
+    image: 1,
+    description: 1,
+    link: 1,
+  },
+  {
+    title: 2,
+    image: 2,
+    description: 2,
+    link: 2,
+  },
+  {
+    title: 3,
+    image: 3,
+    description: 3,
+    link: 3,
+  },
+]
+
 const AuctionList = () => import('@/components/widget/AuctionList')
 const ShowRate = () => import('@/components/home/ShowRate')
 const Banner = () => import('@/components/home/Banner')
@@ -40,33 +58,31 @@ export default {
   },
   data() {
     return {
-      items :
-          [
-            {
-              id: 1,
-              title: 'Test Auction',
-              image: 'images/blog-img.jpg',
-              description: 'Test description',
-              link: 'auction/1',
-            },
-            {
-              id: 2,
-              title: 'Test Auction 2',
-              image: 'images/blog-img.jpg',
-              description: 'Test description 2',
-              link: 'auction/2',
-            },
-            {
-              id: 3,
-              title: 'Test Auction 3',
-              image: 'images/blog-img.jpg',
-              description: 'Test description 3',
-              link: 'auction/3',
-            },
-          ]
+      items: [
+        {
+          id: 1,
+          title: 'Test Auction',
+          image: 'images/blog-img.jpg',
+          description: 'Test description',
+          link: 'auction/1',
+        },
+        {
+          id: 2,
+          title: 'Test Auction 2',
+          image: 'images/blog-img.jpg',
+          description: 'Test description 2',
+          link: 'auction/2',
+        },
+        {
+          id: 3,
+          title: 'Test Auction 3',
+          image: 'images/blog-img.jpg',
+          description: 'Test description 3',
+          link: 'auction/3',
+        },
+      ],
     }
   },
-
 }
 </script>
 
