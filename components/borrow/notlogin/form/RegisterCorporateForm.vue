@@ -9,62 +9,62 @@
       <label>ชื่อเจ้าของกิจการ</label>
       <div class="row">
         <div class="col-12 col-md-6">
-          <input type="text" class="form-control" name="ownerFirstName" placeholder="ชื่อ">
+          <input type="text" class="form-control" v-model="registerdata.firstName" placeholder="ชื่อ">
         </div>
         <div class="col-12 col-md-6">
-          <input type="text" class="form-control" name="ownerLastName" placeholder="นามสกุล">
+          <input type="text" class="form-control" v-model="registerdata.lastName" placeholder="นามสกุล">
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-12">
           <label>ชื่อกิจการ</label>
-          <input type="text" class="form-control" name="nameCoporate">
+          <input type="text" class="form-control" v-model="registerdata.nameCoporate">
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-5">
           <label>เลขที่จดทะเบียน</label>
-          <input type="number" class="form-control" name="registerNumberCoporate">
+          <input type="number" class="form-control" v-model="registerdata.registerNumberCoporate">
         </div>
         <div class="col-12 col-md-4">
           <label>วันที่จดทะเบียน</label>
-          <input type="date" class="form-control" name="registerDayCoporate">
+          <input type="date" class="form-control" v-model="registerdata.registerDayCoporate">
         </div>
         <div class="col-12 col-md-3">
           <label>จำนวนกรรมการบริษัท</label>
-          <input type="number" class="form-control" name="numberOfDirectorsCoporate" min="0">
+          <input type="number" class="form-control" v-model="registerdata.numberOfDirectorsCoporate" min="0">
         </div>
         <div class="col-12 col-md-12">
           <div class="form-group">
             <label>เงื่อนไขการลงนาม</label>
-            <textarea class="form-control" name="convenantCoporate" rows="5"></textarea>
+            <textarea class="form-control" v-model="registerdata.convenantCoporate" rows="5"></textarea>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-6">
           <label>ประเภทธุรกิจ</label>
-          <select name="companyTypeCoporate" class="form-control">
+          <select v-model="registerdata.companyTypeCoporate" class="form-control">
             <option selected>Choose...</option>
             <option>...</option>
           </select>
         </div>
         <div class="col-12 col-md-6">
           <label>ระยะเวลาดำเนินกิจการ</label>
-          <input type="text" class="form-control" name="businessTimelineCoporate">
+          <input type="text" class="form-control" v-model="registerdata.businessTimelineCoporate">
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-12">
           <label>ที่อยู่</label>
-          <input type="text" class="form-control" name="addressCoporate">
+          <input type="text" class="form-control" v-model="registerdata.addressCoporate">
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-12">
           <div class="form-group">
             <label>วัตถุประสงค์ในการฝากขาย</label>
-            <textarea class="form-control" name="businessObjectivesCoporate" rows="5"></textarea>
+            <textarea class="form-control" v-model="registerdata.businessObjectivesCoporate" rows="5"></textarea>
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <div class="input-group-text">
-                <input type="checkbox" required>
+                <input type="checkbox" v-model="registerdata.checkCondition" required>
               </div>
             </div>
             <p class="form-control">ยืนยัน</p>
@@ -87,7 +87,7 @@
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <div class="input-group-text">
-                <input type="checkbox">
+                <input type="checkbox" v-model="registerdata.checkGetemail">
               </div>
             </div>
             <p class="form-control">ต้องการรับข้อมูลข่าวสารรวมถึงโปรโมชั่นต่างๆของบริษัทฯ</p>
@@ -99,7 +99,7 @@
       <div class="row">
         <div class="col-12 col-md-12">
           <center>
-            <input type="submit" class="btn btn-primary" value="Apply for loan" from="RegisFromPerson" onclisk="doSubmit(this)">
+            <input type="submit" class="btn btn-primary"  value="Apply for loan"  @click="this.sumbmitRegister">
           </center>
         </div>
       </div>
@@ -110,12 +110,41 @@
 
 <script>
 function doSubmit(form) {
-  alert('Thank you')
+  alert("Thank you");
 
-  this.$router.push('@/pages/index.vue')
+  this.$router.push("@/pages/index.vue");
 }
 
 export default {
-  name: 'Register-Corporate-Form',
-}
+  name: "Register-Corporate-Form",
+  data() {
+    return {
+      registerdata: {
+        firstName: "",
+        lastName: "",
+        nameCoporate: "",
+        registerNumberCoporate: "",
+        registerDayCoporate: "",
+        numberOfDirectorsCoporate: "",
+        convenantCoporate: "",
+        businessTimelineCoporate: "",
+        addressCoporate: "",
+        businessObjectivesCoporate: "",
+        checkCondition: "",
+        checkGetemail: "",
+      }
+    };
+  },
+  methods: {
+    async sumbmitRegister() {
+      try {
+        console.log(this.registerdata);
+        // const loginSend = await this.$axios.$post(`/api/login/${loginData}`);
+        // commit("loginSend", loginSend);
+      } catch (error) {
+        console.log("send Fail" + error);
+      }
+    }
+  }
+};
 </script>
