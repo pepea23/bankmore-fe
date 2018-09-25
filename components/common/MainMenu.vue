@@ -37,7 +37,7 @@
                         <a class="nav-link">Articles</a>
                     </nuxt-link>
                     <li class="nav-item dropdown">
-                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">   Welcome :   {{this.getName}}</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">   Welcome :   {{this.getUserdetail.name}}</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
@@ -63,7 +63,9 @@ export default {
     name: "Main-Menu",
     method() {},
     computed: {
-        ...mapGetters(["getName"])
+        ...mapGetters({
+            getUserdetail: 'property/getUserdetail',
+        }),
     }
 };
 </script>

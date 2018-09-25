@@ -1,6 +1,9 @@
 export const state = () => ({
   propertyList: [],
   property: {},
+  userDetail:{
+    name:"Guest"
+  }
 })
 
 export const actions = {
@@ -43,4 +46,8 @@ export const getters = {
   getProperty({ property }) {
     return property
   },
+  getUserdetail({userDetail}){
+    console.log(userDetail)
+    return userDetail
+  }
 }

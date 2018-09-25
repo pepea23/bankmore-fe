@@ -62,31 +62,35 @@
 </style>
 
 <script>
-import { mapActions, mapGetters, mapMutations } from "vuex";
+import {
+    mapActions,
+    mapGetters,
+    mapMutations
+} from "vuex";
 
 export default {
-  title: "property-project",
-  components: {},
-  data() {
-    return {
-      datatoSeach: {
-        keyWord: "",
-        propertyType: "",
-        propertyStatus: "",
-        minBid: "",
-        minBaths: "",
-        minArea: "",
-        maxArea: "",
-        monmey: ""
-      }
-    };
-  },
-  methods: {
-    async hnadleOnClickSeach() {
-      let test = "test";
-     
-      await this.$axious.$post("http://206.189.144.210:3333/api/test",test );
+    title: "property-project",
+    components: {},
+    data() {
+        return {
+            datatoSeach: {
+                keyWord: "",
+                propertyType: "",
+                propertyStatus: "",
+                minBid: "",
+                minBaths: "",
+                minArea: "",
+                maxArea: "",
+                monmey: ""
+            }
+        };
+    },
+    methods: {
+        async hnadleOnClickSeach() {
+            let test = "test";
+
+            await this.$axious.$post("http://206.189.144.210:3333/api/test", test);
+        }
     }
-  }
 };
 </script>
