@@ -189,8 +189,16 @@ export default {
     async sumbmitRegister() {
       try {
         console.log(this.registerdata);
-        // const loginSend = await this.$axios.$post(`/api/login/${loginData}`);
-        // commit("loginSend", loginSend);
+        var loginData = {
+          username: "linjingyun12",
+          email: "wdrdres3qew5ts21@gmail.com",
+          password: "lnwzalinjingyun12"
+        };
+        //const loginSend = await this.$axios.$post(`/api/register`);
+
+        this.$axios.$post("/api/register", loginData);
+
+        commit("loginSend", loginSend);
       } catch (error) {
         console.log("send Fail" + error);
       }
