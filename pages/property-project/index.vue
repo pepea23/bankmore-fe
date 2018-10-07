@@ -1,11 +1,11 @@
 <template>
 <div class="container">
   <div class="row">
-    <div class="col-md-4 col-12">
+    <div class="col-md-4 ">
       <CardSearch />
     </div>
-    <div class="col-md-8 col-12">
-      <CardProduct :product="product"></CardProduct>
+    <div class="col-md-8 ">
+      <CardProduct :productlist="product"></CardProduct>
     </div>
   </div>
 </div>

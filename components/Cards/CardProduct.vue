@@ -1,7 +1,7 @@
 <template>
 <div class="row">
-    <div v-for="product in product" :key="product">
-        <div class="col-xl-4 col-md-4 col-6">
+    <div v-for="product in product" :key="product" >
+        <div class="px-2">
             <div class="card">
                 <div class="card-img">
                     <img :src="product.image" :alt="title" />
@@ -44,8 +44,9 @@ export default {
         };
     },
     methods: {},
+
     computed: {
-        ...mapGetters(["getProduct"])
+        ...mapGetters({getProduct:'propertyProject/getProduct'})
     }
 };
 </script>

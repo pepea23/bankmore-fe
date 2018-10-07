@@ -32,12 +32,11 @@
     <table class="table table-striped table-dark">
           <thead>
             <tr>
-              <th>เวลาคงเหลือ</th>
+              <th>เวลาคงเหลือ :<Countdown deadline="October 22, 2018"/> </th>
             </tr>
             <tr>
               <div class="text-danger fontCountdown d-flex justify-content-center">
               <!-- <Countdown deadline="August 22, 2022"></Countdown> -->
-              <Countdown end="14-Sep-2018 23:00:00"></Countdown>
             </div>
               <!-- <th>{{getProperty.expected_interest}} บาท</th>
               <th>{{getProperty.expected_borrow_time}} บาท</th> -->
@@ -47,15 +46,15 @@
   </div>
   <div class="row">
     <div class="col-12 col-md-12">
+      Detail Detail Detail
+    </div>
 
-      </div>
-    <!-- <div class="col-12 col-md-7"><h1>title : {{title}}</h1></div>
-    <div class="col-12 col-md-12"><p>detail : {{detail}}</p></div> -->
     <div class="col-12 col-md-5">
-      
+    <button type="button" class="btn btn-primary font-size-2 container-fluid" @click="handleBidBtn()">Bid!</button>
     </div>
     
   </div>
+
 </div>
 </template>
 
@@ -69,6 +68,9 @@ import Countdown from 'vuejs-countdown'
 import { mapActions, mapGetters } from 'vuex'
 
 export default {
+  components: {
+        Countdown
+    },
   title: 'propertyId',
   asyncData({ params }) {
     return {
@@ -82,6 +84,9 @@ export default {
     ...mapActions({
       fetchPropertysById: 'propertyProject/fetchPropertysById',
     }),
+    handleBidBtn(){
+    console.log("Hit it!!")
+    }
   },
   computed: {
     ...mapGetters({
