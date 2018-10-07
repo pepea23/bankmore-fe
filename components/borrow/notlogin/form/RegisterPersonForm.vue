@@ -139,7 +139,25 @@
       <div class="row">
         <div class="col-12 col-md-12">
           <center>
-            <input type="submit" class="btn btn-primary"  value="Apply for loan"  @click="this.sumbmitRegister">
+            <button id="submitBtn"  type="submit" class="btn btn-primary" data-toggle="modal"  data-target=".clicksubmit"  @click="this.sumbmitRegister">Apply for loan</button>
+            <div class="modal fade clicksubmit" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="col-12">
+                    <h1 class="modal-title" >Thank you !</h1>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <a href="/" class="btn btn-default">Back to Homepage</a>
+                </div>
+              </div>
+            </div>
+          </div>
           </center>
         </div>
       </div>
@@ -149,55 +167,65 @@
 
 <script>
 function doSubmit(form) {
-  alert("Thank you");
-
-  this.$router.push("@/pages/index.vue");
+  this.$router.push('@/pages/index.vue')
 }
 
 export default {
-  name: "Register-Person-Form",
+  name: 'Register-Person-Form',
+  mounted() {
+    console.log('asas')
+    if (this.registerdata.checkConditon === false) {
+      document.getElementById('submitBtn').disabled = true
+    } else if (this.registerdata.checkConditon === true) {
+      document.getElementById('submitBtn').disabled = false
+    }
+  },
   data() {
     return {
       registerdata: {
-        firstName: "",
-        lastName: "",
-        address: "",
-        phonenumber: "",
-        email: "",
-        reference: "",
-        birthday: "",
-        age: "",
-        status: "",
-        numChild: "",
-        education: "",
-        job: "",
-        companyName: "",
-        inputCompanyType: "",
-        yearOfWork: "",
-        position: "",
-        salary: "",
-        otherIncome: "",
-        businessObjectives: "",
-        checkConditon: "",
-        checkGetEmail: ""
-      }
-    };
+        firstName: '',
+        lastName: '',
+        address: '',
+        phonenumber: '',
+        email: '',
+        reference: '',
+        birthday: '',
+        age: '',
+        status: '',
+        numChild: '',
+        education: '',
+        job: '',
+        companyName: '',
+        inputCompanyType: '',
+        yearOfWork: '',
+        position: '',
+        salary: '',
+        otherIncome: '',
+        businessObjectives: '',
+        checkConditon: false,
+        checkGetEmail: '',
+      },
+    }
   },
   methods: {
     async sumbmitRegister() {
       try {
+        console.log(this.registerdata)
         var loginData = {
-          username: "linjingyun12",
-          email: "wdrdres3qew5ts21@gmail.com",
-          password: "lnwzalinjingyun12"
-        };
+          username: 'linjingyun12',
+          email: 'wdrdres3qew5ts21@gmail.com',
+          password: 'lnwzalinjingyun12',
+        }
+        //const loginSend = await this.$axios.$post(`/api/register`);
 
-        this.$axios.$post("/api/register", loginData);
+        this.$axios.$post('/api/register', loginData)
 
+        commit('loginSend', loginSend)
       } catch (error) {
-        console.log("send Fail" + error);
+        console.log('send Fail' + error)
       }
-    }
-  }
-};
+    },
+    handlePopup() {},
+  },
+}
 </script>
