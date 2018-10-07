@@ -3,7 +3,6 @@
   <center>
     <h1>Personal</h1>
   </center>
-  <form action="" method="post">
     <div class="container">
       <h3 style="margin-top: 20px">ข้อมูลผู้ขายฝาก</h3><br>
       <label>ชื่อ</label>
@@ -145,7 +144,6 @@
         </div>
       </div>
     </div>
-  </form>
 </div>
 </template>
 

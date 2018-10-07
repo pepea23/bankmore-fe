@@ -49,9 +49,9 @@ export default {
           username: this.username,
           password: this.password
         };
-        console.log(loginData)
-        const loginSend = await this.$axios.$post(`/api/login/${loginData}`);
-        commit("loginSend", loginSend);
+        const loginSend = await this.$axios.$post(`/api/login/`,loginData);
+        console.log(loginSend);
+        
       } catch (error) {
         console.log("send Fail" + error);
       }
