@@ -14,48 +14,6 @@
 </template>
 
 <script>
-;[
-  {
-    title: 1,
-    sale: 1,
-    rent: 1,
-  },
-  {
-    title: 2,
-    sale: 2,
-    rent: 2,
-  },
-  {
-    title: 3,
-    sale: 3,
-    rent: 3,
-  },
-  {
-    title: 4,
-    sale: 4,
-    rent: 4,
-  },
-  {
-    title: 5,
-    sale: 5,
-    rent: 5,
-  },
-  {
-    title: 6,
-    sale: 6,
-    rent: 6,
-  },
-  {
-    title: 7,
-    sale: 7,
-    rent: 7,
-  },
-  {
-    title: 8,
-    sale: 8,
-    rent: 8,
-  },
-]
 const advanceSearch = () =>
   import('@/components/property-for-sale-rent/advanceSearch')
 const ProductList = () =>

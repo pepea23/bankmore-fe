@@ -12,48 +12,6 @@
 </template>
 
 <script>
-;[
-  {
-    title: 1,
-    description: 1,
-    biding_end_time: 1,
-  },
-  {
-    title: 2,
-    description: 2,
-    biding_end_time: 2,
-  },
-  {
-    title: 3,
-    description: 3,
-    biding_end_time: 3,
-  },
-  {
-    title: 4,
-    description: 4,
-    biding_end_time: 4,
-  },
-  {
-    title: 5,
-    description: 5,
-    biding_end_time: 5,
-  },
-  {
-    title: 6,
-    description: 6,
-    biding_end_time: 6,
-  },
-  {
-    title: 7,
-    description: 7,
-    biding_end_time: 7,
-  },
-  {
-    title: 8,
-    description: 8,
-    biding_end_time: 8,
-  },
-]
 import Countdown from 'vuejs-countdown'
 const CardSearch = () => import('@/components/Cards/CardSearch')
 const CardProduct = () => import('@/components/Cards/CardProduct')

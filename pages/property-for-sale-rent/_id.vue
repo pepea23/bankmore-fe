@@ -57,13 +57,6 @@
 </template>
 
 <script>
-{
-  title: 1
-  img: 1 - 6
-  sale: 1
-  rent: 1
-  detail: 1
-}
 import { mapActions, mapGetters } from 'vuex'
 
 export default {
