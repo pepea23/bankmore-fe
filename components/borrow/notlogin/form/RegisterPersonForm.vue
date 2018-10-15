@@ -140,7 +140,7 @@
         <div class="col-12 col-md-12">
           <center>
             <button id="submitBtn"  type="submit" class="btn btn-primary" data-toggle="modal"  data-target=".clicksubmit"  @click="this.sumbmitRegister">Apply for loan</button>
-            <div class="modal fade clicksubmit" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div id ="modalPerson" class="modal fade clicksubmit" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -162,6 +162,7 @@
         </div>
       </div>
     </div>
+    
 </div>
 </template>
 
@@ -173,12 +174,7 @@ function doSubmit(form) {
 export default {
   name: 'Register-Person-Form',
   mounted() {
-    console.log('asas')
-    if (this.registerdata.checkConditon === false) {
-      document.getElementById('submitBtn').disabled = true
-    } else if (this.registerdata.checkConditon === true) {
-      document.getElementById('submitBtn').disabled = false
-    }
+
   },
   data() {
     return {
@@ -218,14 +214,13 @@ export default {
         }
         //const loginSend = await this.$axios.$post(`/api/register`);
 
-        this.$axios.$post('/api/register', loginData)
+        // this.$axios.$post('/api/register', loginData)
 
-        commit('loginSend', loginSend)
+        // commit('loginSend', loginSend)
       } catch (error) {
         console.log('send Fail' + error)
       }
     },
-    handlePopup() {},
   },
 }
 </script>
